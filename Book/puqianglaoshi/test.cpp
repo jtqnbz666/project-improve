@@ -8,8 +8,8 @@ using namespace std;
 int arr[50000] = {1,2};//若初始化则放在data段，不初始化放bss，放bss只会标记一下，不会完全放进去。
 char *str  = "hhha"; //不管是静态还是动态都在text段，，有时候可能是data段，不用纠结
 
-
 int main() {
+char *str1 = "hhah";
 /* 这我自己写的不准确
    char arr[5] = {"test"};
    char* str1 ="hello; //str1 在栈区，观看可执行文件的大小看不出来,因为堆和栈是运行的时候才分配的。 而“hello”是放在text段的/
