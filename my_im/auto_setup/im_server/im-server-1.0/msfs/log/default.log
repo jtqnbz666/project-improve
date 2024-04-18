@@ -183,3 +183,37 @@
 2023-04-16 20:34:59,129 [INFO  IM] - <ThreadPool.cpp>|<25>|<Execute>,thread_603977280 create!
 2023-04-16 20:34:59,129 [INFO  IM] - <ThreadPool.cpp>|<25>|<Execute>,thread_729802304 create!
 2023-04-16 20:34:59,129 [INFO  IM] - <ThreadPool.cpp>|<25>|<Execute>,thread_721409600 create!
+2024-04-17 22:51:12,966 [INFO  IM] - <main.cpp>|<97>|<main>,MsgServe max files can open:65535
+2024-04-17 22:51:12,966 [INFO  IM] - <main.cpp>|<111>|<main>,127.0.0.1,8700
+2024-04-17 22:51:12,966 [INFO  IM] - <ThreadPool.cpp>|<25>|<Execute>,thread_-125671872 create!
+2024-04-17 22:51:12,966 [INFO  IM] - <ThreadPool.cpp>|<25>|<Execute>,thread_-142457280 create!
+2024-04-17 22:51:12,966 [INFO  IM] - <ThreadPool.cpp>|<25>|<Execute>,thread_-159242688 create!
+2024-04-17 22:51:12,966 [INFO  IM] - <ThreadPool.cpp>|<25>|<Execute>,thread_-176028096 create!
+2024-04-17 22:51:12,966 [INFO  IM] - <ThreadPool.cpp>|<25>|<Execute>,thread_-192813504 create!
+2024-04-17 22:51:12,969 [INFO  IM] - <ThreadPool.cpp>|<25>|<Execute>,thread_-150849984 create!
+2024-04-17 22:51:12,969 [INFO  IM] - <ThreadPool.cpp>|<25>|<Execute>,thread_-167635392 create!
+2024-04-17 22:51:12,969 [INFO  IM] - <ThreadPool.cpp>|<25>|<Execute>,thread_-184420800 create!
+2024-04-17 22:51:12,969 [INFO  IM] - <ThreadPool.cpp>|<25>|<Execute>,thread_-134064576 create!
+2024-04-18 00:33:42,940 [INFO  IM] - <main.cpp>|<97>|<main>,MsgServe max files can open:65535
+2024-04-18 00:33:42,940 [INFO  IM] - <main.cpp>|<111>|<main>,127.0.0.1,8700
+2024-04-18 00:33:42,942 [INFO  IM] - <ThreadPool.cpp>|<25>|<Execute>,thread_-1586063808 create!
+2024-04-18 00:33:42,942 [INFO  IM] - <ThreadPool.cpp>|<25>|<Execute>,thread_-1594456512 create!
+2024-04-18 00:33:42,942 [INFO  IM] - <ThreadPool.cpp>|<25>|<Execute>,thread_-1602849216 create!
+2024-04-18 00:33:42,942 [INFO  IM] - <ThreadPool.cpp>|<25>|<Execute>,thread_-1644812736 create!
+2024-04-18 00:33:42,943 [INFO  IM] - <ThreadPool.cpp>|<25>|<Execute>,thread_-1636420032 create!
+2024-04-18 00:33:42,943 [INFO  IM] - <ThreadPool.cpp>|<25>|<Execute>,thread_-1628027328 create!
+2024-04-18 00:33:42,943 [INFO  IM] - <ThreadPool.cpp>|<25>|<Execute>,thread_-1619634624 create!
+2024-04-18 00:33:42,944 [INFO  IM] - <ThreadPool.cpp>|<25>|<Execute>,thread_-1611241920 create!
+2024-04-18 00:33:42,946 [INFO  IM] - <ThreadPool.cpp>|<25>|<Execute>,thread_-1577671104 create!
+2024-04-18 00:33:43,047 [ERROR IM] - <BaseSocket.cpp>|<56>|<Listen>,bind failed, err_code=98, server_ip=127.0.0.1, port=8700
+2024-04-18 00:34:44,364 [INFO  IM] - <main.cpp>|<97>|<main>,MsgServe max files can open:65535
+2024-04-18 00:34:44,364 [INFO  IM] - <main.cpp>|<111>|<main>,127.0.0.1,8700
+2024-04-18 00:34:44,364 [INFO  IM] - <ThreadPool.cpp>|<25>|<Execute>,thread_1473476160 create!
+2024-04-18 00:34:44,364 [INFO  IM] - <ThreadPool.cpp>|<25>|<Execute>,thread_1465083456 create!
+2024-04-18 00:34:44,364 [INFO  IM] - <ThreadPool.cpp>|<25>|<Execute>,thread_1431512640 create!
+2024-04-18 00:34:44,364 [INFO  IM] - <ThreadPool.cpp>|<25>|<Execute>,thread_1439905344 create!
+2024-04-18 00:34:44,369 [INFO  IM] - <ThreadPool.cpp>|<25>|<Execute>,thread_1423119936 create!
+2024-04-18 00:34:44,369 [INFO  IM] - <ThreadPool.cpp>|<25>|<Execute>,thread_1333782080 create!
+2024-04-18 00:34:44,369 [INFO  IM] - <ThreadPool.cpp>|<25>|<Execute>,thread_1342174784 create!
+2024-04-18 00:34:44,369 [INFO  IM] - <ThreadPool.cpp>|<25>|<Execute>,thread_1456690752 create!
+2024-04-18 00:34:44,370 [INFO  IM] - <ThreadPool.cpp>|<25>|<Execute>,thread_1448298048 create!

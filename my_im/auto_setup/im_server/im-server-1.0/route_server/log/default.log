@@ -307,3 +307,98 @@
 2023-04-18 19:14:03,701 [INFO  IM] - <RouteConn.cpp>|<238>|<_HandleUsersStatusRequest>,HandleUserStatusReq, req_id=2, query_count=4
 2023-04-18 23:38:19,994 [INFO  IM] - <RouteConn.cpp>|<151>|<_HandleUserStatusUpdate>,HandleUserStatusUpdate, status=2, uid=2, client_type=1
 2023-04-18 23:38:20,257 [INFO  IM] - <DBPool.cpp>|<195>|<ExecuteQuery>,mysql_store_result failed: 
+2024-04-17 22:51:13,036 [INFO  IM] - <RouteConn.cpp>|<225>|<_HandleRoleSet>,HandleRoleSet, master=1, handle=7
+2024-04-17 22:51:16,986 [INFO  IM] - <RouteConn.cpp>|<225>|<_HandleRoleSet>,HandleRoleSet, master=1, handle=8
+2024-04-17 22:51:16,986 [INFO  IM] - <RouteConn.cpp>|<137>|<_HandleOnlineUserInfo>,HandleOnlineUserInfo, user_cnt=0
+2024-04-18 00:33:42,924 [INFO  IM] - <RouteConn.cpp>|<225>|<_HandleRoleSet>,HandleRoleSet, master=1, handle=7
+2024-04-18 00:33:42,924 [INFO  IM] - <RouteConn.cpp>|<137>|<_HandleOnlineUserInfo>,HandleOnlineUserInfo, user_cnt=0
+2024-04-18 00:33:42,952 [INFO  IM] - <RouteConn.cpp>|<225>|<_HandleRoleSet>,HandleRoleSet, master=1, handle=8
+2024-04-18 00:34:44,351 [INFO  IM] - <RouteConn.cpp>|<225>|<_HandleRoleSet>,HandleRoleSet, master=1, handle=7
+2024-04-18 00:34:44,351 [INFO  IM] - <RouteConn.cpp>|<137>|<_HandleOnlineUserInfo>,HandleOnlineUserInfo, user_cnt=0
+2024-04-18 00:34:44,385 [INFO  IM] - <RouteConn.cpp>|<225>|<_HandleRoleSet>,HandleRoleSet, master=1, handle=8
+2024-04-18 00:37:40,793 [INFO  IM] - <RouteConn.cpp>|<77>|<OnClose>,MsgServer onclose: handle=7
+2024-04-18 00:37:40,810 [INFO  IM] - <RouteConn.cpp>|<225>|<_HandleRoleSet>,HandleRoleSet, master=1, handle=7
+2024-04-18 00:37:40,810 [INFO  IM] - <RouteConn.cpp>|<137>|<_HandleOnlineUserInfo>,HandleOnlineUserInfo, user_cnt=0
+2024-04-18 00:37:45,928 [INFO  IM] - <RouteConn.cpp>|<151>|<_HandleUserStatusUpdate>,HandleUserStatusUpdate, status=1, uid=1, client_type=1
+2024-04-18 00:37:45,939 [INFO  IM] - <DBPool.cpp>|<177>|<Init>,mysql_real_connect failed :Access denied for user 'root'@'localhost' (using password: YES)
+2024-04-18 00:37:45,939 [INFO  IM] - <DBPool.cpp>|<373>|<Init>,init db instance failed: teamtalk_master
+2024-04-18 17:01:29,436 [INFO  IM] - <RouteConn.cpp>|<225>|<_HandleRoleSet>,HandleRoleSet, master=1, handle=7
+2024-04-18 17:01:29,824 [INFO  IM] - <RouteConn.cpp>|<225>|<_HandleRoleSet>,HandleRoleSet, master=1, handle=8
+2024-04-18 17:01:29,824 [INFO  IM] - <RouteConn.cpp>|<137>|<_HandleOnlineUserInfo>,HandleOnlineUserInfo, user_cnt=0
+2024-04-18 17:01:49,998 [INFO  IM] - <RouteConn.cpp>|<151>|<_HandleUserStatusUpdate>,HandleUserStatusUpdate, status=1, uid=1, client_type=1
+2024-04-18 17:01:50,009 [INFO  IM] - <DBPool.cpp>|<177>|<Init>,mysql_real_connect failed :Access denied for user 'root'@'localhost' (using password: YES)
+2024-04-18 17:01:50,009 [INFO  IM] - <DBPool.cpp>|<373>|<Init>,init db instance failed: teamtalk_master
+2024-04-18 17:14:13,393 [INFO  IM] - <RouteConn.cpp>|<225>|<_HandleRoleSet>,HandleRoleSet, master=1, handle=7
+2024-04-18 17:14:13,823 [INFO  IM] - <RouteConn.cpp>|<225>|<_HandleRoleSet>,HandleRoleSet, master=1, handle=8
+2024-04-18 17:14:13,823 [INFO  IM] - <RouteConn.cpp>|<137>|<_HandleOnlineUserInfo>,HandleOnlineUserInfo, user_cnt=0
+2024-04-18 17:14:16,918 [INFO  IM] - <RouteConn.cpp>|<151>|<_HandleUserStatusUpdate>,HandleUserStatusUpdate, status=1, uid=2, client_type=1
+2024-04-18 17:14:16,936 [INFO  IM] - <DBPool.cpp>|<259>|<Init>,db pool:teamtalk_master, size:2
+2024-04-18 17:14:16,949 [INFO  IM] - <DBPool.cpp>|<259>|<Init>,db pool:teamtalk_slave, size:2
+2024-04-18 17:14:16,950 [INFO  IM] - <DBPool.cpp>|<190>|<ExecuteQuery>,mysql_real_query failed Table 'teamtalk.IMUser_State' doesn't exist, sql : update IMUser_State set state = 1 where user_id = 2
+2024-04-18 17:14:16,951 [INFO  IM] - <DBPool.cpp>|<190>|<ExecuteQuery>,mysql_real_query failed Table 'teamtalk.IMUser_State' doesn't exist, sql : insert into IMUser_State values(2,1)
+2024-04-18 17:14:16,952 [INFO  IM] - <DBPool.cpp>|<190>|<ExecuteQuery>,mysql_real_query failed Table 'teamtalk.IMUser_State' doesn't exist, sql : update IMUser_State set state = 1 where user_id = 2
+2024-04-18 17:14:17,460 [INFO  IM] - <RouteConn.cpp>|<238>|<_HandleUsersStatusRequest>,HandleUserStatusReq, req_id=2, query_count=4
+2024-04-18 17:14:17,461 [INFO  IM] - <CachePool.cpp>|<483>|<Init>,cache pool : unread, list size:2
+2024-04-18 17:14:17,461 [INFO  IM] - <CachePool.cpp>|<483>|<Init>,cache pool : group_set, list size:2
+2024-04-18 17:14:17,461 [INFO  IM] - <CachePool.cpp>|<483>|<Init>,cache pool : token, list size:2
+2024-04-18 17:14:17,461 [INFO  IM] - <CachePool.cpp>|<483>|<Init>,cache pool : sync, list size:2
+2024-04-18 17:14:17,462 [INFO  IM] - <CachePool.cpp>|<483>|<Init>,cache pool : group_member, list size:2
+2024-04-18 17:14:17,462 [INFO  IM] - <RouteConn.cpp>|<238>|<_HandleUsersStatusRequest>,HandleUserStatusReq, req_id=2, query_count=4
+2024-04-18 17:14:20,602 [INFO  IM] - <RouteConn.cpp>|<151>|<_HandleUserStatusUpdate>,HandleUserStatusUpdate, status=1, uid=1, client_type=1
+2024-04-18 17:14:20,603 [INFO  IM] - <DBPool.cpp>|<190>|<ExecuteQuery>,mysql_real_query failed Table 'teamtalk.IMUser_State' doesn't exist, sql : update IMUser_State set state = 1 where user_id = 1
+2024-04-18 17:14:20,603 [INFO  IM] - <DBPool.cpp>|<190>|<ExecuteQuery>,mysql_real_query failed Table 'teamtalk.IMUser_State' doesn't exist, sql : insert into IMUser_State values(1,1)
+2024-04-18 17:14:20,603 [INFO  IM] - <DBPool.cpp>|<190>|<ExecuteQuery>,mysql_real_query failed Table 'teamtalk.IMUser_State' doesn't exist, sql : update IMUser_State set state = 1 where user_id = 1
+2024-04-18 17:14:20,878 [INFO  IM] - <RouteConn.cpp>|<238>|<_HandleUsersStatusRequest>,HandleUserStatusReq, req_id=1, query_count=5
+2024-04-18 17:14:20,880 [INFO  IM] - <RouteConn.cpp>|<238>|<_HandleUsersStatusRequest>,HandleUserStatusReq, req_id=1, query_count=5
+2024-04-18 17:23:48,541 [INFO  IM] - <RouteConn.cpp>|<151>|<_HandleUserStatusUpdate>,HandleUserStatusUpdate, status=1, uid=2, client_type=1
+2024-04-18 17:23:48,541 [INFO  IM] - <DBPool.cpp>|<190>|<ExecuteQuery>,mysql_real_query failed Table 'teamtalk.IMUser_State' doesn't exist, sql : update IMUser_State set state = 1 where user_id = 2
+2024-04-18 17:23:48,618 [INFO  IM] - <RouteConn.cpp>|<151>|<_HandleUserStatusUpdate>,HandleUserStatusUpdate, status=2, uid=2, client_type=1
+2024-04-18 17:23:48,619 [INFO  IM] - <DBPool.cpp>|<190>|<ExecuteQuery>,mysql_real_query failed Table 'teamtalk.IMUser_State' doesn't exist, sql : update IMUser_State set state = 2 where user_id = 2
+2024-04-18 17:23:56,713 [INFO  IM] - <RouteConn.cpp>|<151>|<_HandleUserStatusUpdate>,HandleUserStatusUpdate, status=1, uid=2, client_type=1
+2024-04-18 17:23:56,720 [INFO  IM] - <DBPool.cpp>|<283>|<GetDBConn>,new db connection: teamtalk_slave, conn_cnt: 3
+2024-04-18 17:23:56,721 [INFO  IM] - <DBPool.cpp>|<190>|<ExecuteQuery>,mysql_real_query failed Table 'teamtalk.IMUser_State' doesn't exist, sql : update IMUser_State set state = 1 where user_id = 2
+2024-04-18 17:23:56,767 [INFO  IM] - <RouteConn.cpp>|<151>|<_HandleUserStatusUpdate>,HandleUserStatusUpdate, status=2, uid=2, client_type=1
+2024-04-18 17:23:56,768 [INFO  IM] - <DBPool.cpp>|<190>|<ExecuteQuery>,mysql_real_query failed Table 'teamtalk.IMUser_State' doesn't exist, sql : update IMUser_State set state = 2 where user_id = 2
+2024-04-18 17:24:05,832 [INFO  IM] - <RouteConn.cpp>|<151>|<_HandleUserStatusUpdate>,HandleUserStatusUpdate, status=1, uid=2, client_type=1
+2024-04-18 17:24:05,839 [INFO  IM] - <DBPool.cpp>|<283>|<GetDBConn>,new db connection: teamtalk_slave, conn_cnt: 4
+2024-04-18 17:24:05,840 [INFO  IM] - <DBPool.cpp>|<190>|<ExecuteQuery>,mysql_real_query failed Table 'teamtalk.IMUser_State' doesn't exist, sql : update IMUser_State set state = 1 where user_id = 2
+2024-04-18 17:24:05,880 [INFO  IM] - <RouteConn.cpp>|<151>|<_HandleUserStatusUpdate>,HandleUserStatusUpdate, status=2, uid=2, client_type=1
+2024-04-18 17:24:05,881 [INFO  IM] - <DBPool.cpp>|<190>|<ExecuteQuery>,mysql_real_query failed Table 'teamtalk.IMUser_State' doesn't exist, sql : update IMUser_State set state = 2 where user_id = 2
+2024-04-18 17:24:11,049 [INFO  IM] - <RouteConn.cpp>|<151>|<_HandleUserStatusUpdate>,HandleUserStatusUpdate, status=2, uid=2, client_type=1
+2024-04-18 17:24:11,050 [INFO  IM] - <DBPool.cpp>|<190>|<ExecuteQuery>,mysql_real_query failed Table 'teamtalk.IMUser_State' doesn't exist, sql : update IMUser_State set state = 2 where user_id = 2
+2024-04-18 17:24:15,133 [INFO  IM] - <RouteConn.cpp>|<151>|<_HandleUserStatusUpdate>,HandleUserStatusUpdate, status=1, uid=1, client_type=1
+2024-04-18 17:24:15,141 [INFO  IM] - <DBPool.cpp>|<283>|<GetDBConn>,new db connection: teamtalk_slave, conn_cnt: 5
+2024-04-18 17:24:15,141 [INFO  IM] - <DBPool.cpp>|<190>|<ExecuteQuery>,mysql_real_query failed Table 'teamtalk.IMUser_State' doesn't exist, sql : update IMUser_State set state = 1 where user_id = 1
+2024-04-18 17:24:15,180 [INFO  IM] - <RouteConn.cpp>|<151>|<_HandleUserStatusUpdate>,HandleUserStatusUpdate, status=2, uid=1, client_type=1
+2024-04-18 17:24:15,181 [INFO  IM] - <DBPool.cpp>|<190>|<ExecuteQuery>,mysql_real_query failed Table 'teamtalk.IMUser_State' doesn't exist, sql : update IMUser_State set state = 2 where user_id = 1
+2024-04-18 17:24:21,417 [INFO  IM] - <RouteConn.cpp>|<151>|<_HandleUserStatusUpdate>,HandleUserStatusUpdate, status=2, uid=1, client_type=1
+2024-04-18 17:24:21,418 [INFO  IM] - <DBPool.cpp>|<190>|<ExecuteQuery>,mysql_real_query failed Table 'teamtalk.IMUser_State' doesn't exist, sql : update IMUser_State set state = 2 where user_id = 1
+2024-04-18 17:42:33,531 [INFO  IM] - <RouteConn.cpp>|<151>|<_HandleUserStatusUpdate>,HandleUserStatusUpdate, status=1, uid=1, client_type=1
+2024-04-18 17:42:33,531 [INFO  IM] - <DBPool.cpp>|<190>|<ExecuteQuery>,mysql_real_query failed Table 'teamtalk.IMUser_State' doesn't exist, sql : update IMUser_State set state = 1 where user_id = 1
+2024-04-18 17:42:33,532 [INFO  IM] - <DBPool.cpp>|<190>|<ExecuteQuery>,mysql_real_query failed Table 'teamtalk.IMUser_State' doesn't exist, sql : insert into IMUser_State values(1,1)
+2024-04-18 17:42:33,532 [INFO  IM] - <DBPool.cpp>|<190>|<ExecuteQuery>,mysql_real_query failed Table 'teamtalk.IMUser_State' doesn't exist, sql : update IMUser_State set state = 1 where user_id = 1
+2024-04-18 17:42:33,732 [INFO  IM] - <RouteConn.cpp>|<238>|<_HandleUsersStatusRequest>,HandleUserStatusReq, req_id=1, query_count=1
+2024-04-18 17:42:33,897 [INFO  IM] - <RouteConn.cpp>|<238>|<_HandleUsersStatusRequest>,HandleUserStatusReq, req_id=1, query_count=5
+2024-04-18 17:42:47,007 [INFO  IM] - <RouteConn.cpp>|<151>|<_HandleUserStatusUpdate>,HandleUserStatusUpdate, status=1, uid=2, client_type=1
+2024-04-18 17:42:47,008 [INFO  IM] - <DBPool.cpp>|<190>|<ExecuteQuery>,mysql_real_query failed Table 'teamtalk.IMUser_State' doesn't exist, sql : update IMUser_State set state = 1 where user_id = 2
+2024-04-18 17:42:47,008 [INFO  IM] - <DBPool.cpp>|<190>|<ExecuteQuery>,mysql_real_query failed Table 'teamtalk.IMUser_State' doesn't exist, sql : insert into IMUser_State values(2,1)
+2024-04-18 17:42:47,009 [INFO  IM] - <DBPool.cpp>|<190>|<ExecuteQuery>,mysql_real_query failed Table 'teamtalk.IMUser_State' doesn't exist, sql : update IMUser_State set state = 1 where user_id = 2
+2024-04-18 17:42:47,217 [INFO  IM] - <RouteConn.cpp>|<238>|<_HandleUsersStatusRequest>,HandleUserStatusReq, req_id=2, query_count=1
+2024-04-18 17:42:47,362 [INFO  IM] - <RouteConn.cpp>|<238>|<_HandleUsersStatusRequest>,HandleUserStatusReq, req_id=2, query_count=4
+2024-04-18 18:21:44,740 [INFO  IM] - <RouteConn.cpp>|<77>|<OnClose>,MsgServer onclose: handle=26
+2024-04-18 21:18:07,468 [INFO  IM] - <RouteConn.cpp>|<151>|<_HandleUserStatusUpdate>,HandleUserStatusUpdate, status=2, uid=1, client_type=1
+2024-04-18 21:18:07,478 [INFO  IM] - <DBPool.cpp>|<190>|<ExecuteQuery>,mysql_real_query failed Unknown column 'state' in 'field list', sql : update IMUser_State set state = 2 where user_id = 1
+2024-04-18 21:18:07,481 [INFO  IM] - <RouteConn.cpp>|<151>|<_HandleUserStatusUpdate>,HandleUserStatusUpdate, status=2, uid=2, client_type=1
+2024-04-18 21:18:07,481 [INFO  IM] - <DBPool.cpp>|<190>|<ExecuteQuery>,mysql_real_query failed Unknown column 'state' in 'field list', sql : update IMUser_State set state = 2 where user_id = 2
+2024-04-18 21:38:48,780 [INFO  IM] - <RouteConn.cpp>|<151>|<_HandleUserStatusUpdate>,HandleUserStatusUpdate, status=1, uid=2, client_type=1
+2024-04-18 21:38:48,781 [INFO  IM] - <DBPool.cpp>|<190>|<ExecuteQuery>,mysql_real_query failed Unknown column 'state' in 'field list', sql : update IMUser_State set state = 1 where user_id = 2
+2024-04-18 21:38:48,786 [INFO  IM] - <DBPool.cpp>|<195>|<ExecuteQuery>,mysql_store_result failed: 
+2024-04-18 21:38:48,786 [INFO  IM] - <DBPool.cpp>|<190>|<ExecuteQuery>,mysql_real_query failed Unknown column 'state' in 'field list', sql : update IMUser_State set state = 1 where user_id = 2
+2024-04-18 21:38:48,943 [INFO  IM] - <RouteConn.cpp>|<238>|<_HandleUsersStatusRequest>,HandleUserStatusReq, req_id=2, query_count=1
+2024-04-18 21:38:49,037 [INFO  IM] - <RouteConn.cpp>|<238>|<_HandleUsersStatusRequest>,HandleUserStatusReq, req_id=2, query_count=4
+2024-04-18 21:39:21,025 [INFO  IM] - <RouteConn.cpp>|<151>|<_HandleUserStatusUpdate>,HandleUserStatusUpdate, status=1, uid=1, client_type=1
+2024-04-18 21:39:21,025 [INFO  IM] - <DBPool.cpp>|<190>|<ExecuteQuery>,mysql_real_query failed Unknown column 'state' in 'field list', sql : update IMUser_State set state = 1 where user_id = 1
+2024-04-18 21:39:21,030 [INFO  IM] - <DBPool.cpp>|<195>|<ExecuteQuery>,mysql_store_result failed: 
+2024-04-18 21:39:21,030 [INFO  IM] - <DBPool.cpp>|<190>|<ExecuteQuery>,mysql_real_query failed Unknown column 'state' in 'field list', sql : update IMUser_State set state = 1 where user_id = 1
+2024-04-18 21:39:21,187 [INFO  IM] - <RouteConn.cpp>|<238>|<_HandleUsersStatusRequest>,HandleUserStatusReq, req_id=1, query_count=1
+2024-04-18 21:39:21,316 [INFO  IM] - <RouteConn.cpp>|<238>|<_HandleUsersStatusRequest>,HandleUserStatusReq, req_id=1, query_count=5

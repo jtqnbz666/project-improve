@@ -256,3 +256,22 @@
 2023-04-18 19:14:01,261 [INFO  IM] - <file_msg_server_conn.cpp>|<67>|<OnTimer>,msg server timeout
 2023-04-18 19:14:01,334 [INFO  IM] - <file_msg_server_conn.cpp>|<44>|<Close>,Close client, handle 8
 2023-04-18 19:14:01,634 [INFO  IM] - <file_msg_server_conn.cpp>|<153>|<_HandleGetServerAddressReq>,Upload file_client_conn addr info, ip=127.0.0.1, port=8600
+2024-04-17 22:51:12,951 [ERROR IM] - <BaseSocket.cpp>|<56>|<Listen>,bind failed, err_code=98, server_ip=0.0.0.0, port=8600
+2024-04-17 22:53:16,996 [INFO  IM] - <file_msg_server_conn.cpp>|<153>|<_HandleGetServerAddressReq>,Upload file_client_conn addr info, ip=127.0.0.1, port=8600
+2024-04-18 00:33:46,929 [INFO  IM] - <file_msg_server_conn.cpp>|<153>|<_HandleGetServerAddressReq>,Upload file_client_conn addr info, ip=127.0.0.1, port=8600
+2024-04-18 00:34:48,356 [INFO  IM] - <file_msg_server_conn.cpp>|<153>|<_HandleGetServerAddressReq>,Upload file_client_conn addr info, ip=127.0.0.1, port=8600
+2024-04-18 00:37:40,794 [INFO  IM] - <file_msg_server_conn.cpp>|<61>|<OnClose>,Client onclose: handle=8
+2024-04-18 00:37:40,794 [INFO  IM] - <file_msg_server_conn.cpp>|<44>|<Close>,Close client, handle 8
+2024-04-18 00:37:40,810 [INFO  IM] - <file_msg_server_conn.cpp>|<153>|<_HandleGetServerAddressReq>,Upload file_client_conn addr info, ip=127.0.0.1, port=8600
+2024-04-18 11:21:40,458 [INFO  IM] - <file_client_conn.cpp>|<92>|<OnTimer>,client timeout, user_id=0
+2024-04-18 11:21:40,459 [INFO  IM] - <file_client_conn.cpp>|<44>|<Close>,close client, handle 9
+2024-04-18 11:45:49,430 [INFO  IM] - <file_client_conn.cpp>|<92>|<OnTimer>,client timeout, user_id=0
+2024-04-18 11:45:49,430 [INFO  IM] - <file_client_conn.cpp>|<44>|<Close>,close client, handle 9
+2024-04-18 22:16:05,948 [INFO  IM] - <file_msg_server_conn.cpp>|<120>|<_HandleMsgFileTransferReq>,trams_mode=1, task_id=dbd02d20-bb13-4217-bad6-462100e832f3, from_id=1, to_id=2, file_name=C:/Users/ASUS/Pictures/94/-2e24c9eaa025d6db.jpg, file_size=259391
+2024-04-18 22:16:05,960 [INFO  IM] - <file_msg_server_conn.cpp>|<137>|<_HandleMsgFileTransferReq>,Create task succeed, task id dbd02d20-bb13-4217-bad6-462100e832f3, task type 1, from user 1, to user 2
+2024-04-18 22:16:17,325 [INFO  IM] - <file_msg_server_conn.cpp>|<120>|<_HandleMsgFileTransferReq>,trams_mode=1, task_id=3fbb684e-9195-4524-9899-aea4043e25f7, from_id=1, to_id=2, file_name=C:/Users/ASUS/Pictures/94/170c9b9599c1b912.jpg, file_size=162882
+2024-04-18 22:16:17,325 [INFO  IM] - <file_msg_server_conn.cpp>|<137>|<_HandleMsgFileTransferReq>,Create task succeed, task id 3fbb684e-9195-4524-9899-aea4043e25f7, task type 1, from user 1, to user 2
+2024-04-18 22:16:29,504 [INFO  IM] - <file_msg_server_conn.cpp>|<120>|<_HandleMsgFileTransferReq>,trams_mode=1, task_id=c95818b3-4bf7-4573-9193-f74a80802ba0, from_id=2, to_id=1, file_name=C:/Users/ASUS/Pictures/94/IMG_20200919_220847.jpg, file_size=2325269
+2024-04-18 22:16:29,504 [INFO  IM] - <file_msg_server_conn.cpp>|<137>|<_HandleMsgFileTransferReq>,Create task succeed, task id c95818b3-4bf7-4573-9193-f74a80802ba0, task type 1, from user 2, to user 1
+2024-04-18 22:20:49,021 [INFO  IM] - <file_msg_server_conn.cpp>|<120>|<_HandleMsgFileTransferReq>,trams_mode=1, task_id=8151bd9e-0344-455a-b90b-ca528617e26f, from_id=1, to_id=2, file_name=C:/Users/ASUS/Pictures/94/-7d5fc58201c6e3c4.jpg, file_size=260997
+2024-04-18 22:20:49,021 [INFO  IM] - <file_msg_server_conn.cpp>|<137>|<_HandleMsgFileTransferReq>,Create task succeed, task id 8151bd9e-0344-455a-b90b-ca528617e26f, task type 1, from user 1, to user 2
