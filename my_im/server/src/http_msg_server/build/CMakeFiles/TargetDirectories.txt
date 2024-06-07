@@ -1,3 +1,0 @@
-/home/jt/my_im/server/src/http_msg_server/build/CMakeFiles/http_msg_server.dir
-/home/jt/my_im/server/src/http_msg_server/build/CMakeFiles/edit_cache.dir
-/home/jt/my_im/server/src/http_msg_server/build/CMakeFiles/rebuild_cache.dir

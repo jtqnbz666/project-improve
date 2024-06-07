@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jt/my_im/server/src/msfs
+CMAKE_SOURCE_DIR = /root/project-improve/my_im/server/src/msfs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jt/my_im/server/src/msfs/build
+CMAKE_BINARY_DIR = /root/project-improve/my_im/server/src/msfs/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -81,14 +81,14 @@ clean: CMakeFiles/msfs.dir/clean
 CMakeFiles/msfs.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/msfs.dir/build.make CMakeFiles/msfs.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/msfs.dir/build.make CMakeFiles/msfs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jt/my_im/server/src/msfs/build/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target msfs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/root/project-improve/my_im/server/src/msfs/build/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target msfs"
 .PHONY : CMakeFiles/msfs.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/msfs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jt/my_im/server/src/msfs/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/project-improve/my_im/server/src/msfs/build/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/msfs.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jt/my_im/server/src/msfs/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/project-improve/my_im/server/src/msfs/build/CMakeFiles 0
 .PHONY : CMakeFiles/msfs.dir/rule
 
 # Convenience name for target.

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jt/my_im/server/src/file_server
+CMAKE_SOURCE_DIR = /root/project-improve/my_im/server/src/file_server
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jt/my_im/server/src/file_server/build
+CMAKE_BINARY_DIR = /root/project-improve/my_im/server/src/file_server/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/file_server.dir/depend.make
@@ -72,86 +72,86 @@ include CMakeFiles/file_server.dir/flags.make
 CMakeFiles/file_server.dir/config_util.cpp.o: CMakeFiles/file_server.dir/flags.make
 CMakeFiles/file_server.dir/config_util.cpp.o: ../config_util.cpp
 CMakeFiles/file_server.dir/config_util.cpp.o: CMakeFiles/file_server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jt/my_im/server/src/file_server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/file_server.dir/config_util.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/file_server.dir/config_util.cpp.o -MF CMakeFiles/file_server.dir/config_util.cpp.o.d -o CMakeFiles/file_server.dir/config_util.cpp.o -c /home/jt/my_im/server/src/file_server/config_util.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/project-improve/my_im/server/src/file_server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/file_server.dir/config_util.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/file_server.dir/config_util.cpp.o -MF CMakeFiles/file_server.dir/config_util.cpp.o.d -o CMakeFiles/file_server.dir/config_util.cpp.o -c /root/project-improve/my_im/server/src/file_server/config_util.cpp
 
 CMakeFiles/file_server.dir/config_util.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/file_server.dir/config_util.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jt/my_im/server/src/file_server/config_util.cpp > CMakeFiles/file_server.dir/config_util.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/project-improve/my_im/server/src/file_server/config_util.cpp > CMakeFiles/file_server.dir/config_util.cpp.i
 
 CMakeFiles/file_server.dir/config_util.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/file_server.dir/config_util.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jt/my_im/server/src/file_server/config_util.cpp -o CMakeFiles/file_server.dir/config_util.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/project-improve/my_im/server/src/file_server/config_util.cpp -o CMakeFiles/file_server.dir/config_util.cpp.s
 
 CMakeFiles/file_server.dir/file_client_conn.cpp.o: CMakeFiles/file_server.dir/flags.make
 CMakeFiles/file_server.dir/file_client_conn.cpp.o: ../file_client_conn.cpp
 CMakeFiles/file_server.dir/file_client_conn.cpp.o: CMakeFiles/file_server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jt/my_im/server/src/file_server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/file_server.dir/file_client_conn.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/file_server.dir/file_client_conn.cpp.o -MF CMakeFiles/file_server.dir/file_client_conn.cpp.o.d -o CMakeFiles/file_server.dir/file_client_conn.cpp.o -c /home/jt/my_im/server/src/file_server/file_client_conn.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/project-improve/my_im/server/src/file_server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/file_server.dir/file_client_conn.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/file_server.dir/file_client_conn.cpp.o -MF CMakeFiles/file_server.dir/file_client_conn.cpp.o.d -o CMakeFiles/file_server.dir/file_client_conn.cpp.o -c /root/project-improve/my_im/server/src/file_server/file_client_conn.cpp
 
 CMakeFiles/file_server.dir/file_client_conn.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/file_server.dir/file_client_conn.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jt/my_im/server/src/file_server/file_client_conn.cpp > CMakeFiles/file_server.dir/file_client_conn.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/project-improve/my_im/server/src/file_server/file_client_conn.cpp > CMakeFiles/file_server.dir/file_client_conn.cpp.i
 
 CMakeFiles/file_server.dir/file_client_conn.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/file_server.dir/file_client_conn.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jt/my_im/server/src/file_server/file_client_conn.cpp -o CMakeFiles/file_server.dir/file_client_conn.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/project-improve/my_im/server/src/file_server/file_client_conn.cpp -o CMakeFiles/file_server.dir/file_client_conn.cpp.s
 
 CMakeFiles/file_server.dir/file_msg_server_conn.cpp.o: CMakeFiles/file_server.dir/flags.make
 CMakeFiles/file_server.dir/file_msg_server_conn.cpp.o: ../file_msg_server_conn.cpp
 CMakeFiles/file_server.dir/file_msg_server_conn.cpp.o: CMakeFiles/file_server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jt/my_im/server/src/file_server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/file_server.dir/file_msg_server_conn.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/file_server.dir/file_msg_server_conn.cpp.o -MF CMakeFiles/file_server.dir/file_msg_server_conn.cpp.o.d -o CMakeFiles/file_server.dir/file_msg_server_conn.cpp.o -c /home/jt/my_im/server/src/file_server/file_msg_server_conn.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/project-improve/my_im/server/src/file_server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/file_server.dir/file_msg_server_conn.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/file_server.dir/file_msg_server_conn.cpp.o -MF CMakeFiles/file_server.dir/file_msg_server_conn.cpp.o.d -o CMakeFiles/file_server.dir/file_msg_server_conn.cpp.o -c /root/project-improve/my_im/server/src/file_server/file_msg_server_conn.cpp
 
 CMakeFiles/file_server.dir/file_msg_server_conn.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/file_server.dir/file_msg_server_conn.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jt/my_im/server/src/file_server/file_msg_server_conn.cpp > CMakeFiles/file_server.dir/file_msg_server_conn.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/project-improve/my_im/server/src/file_server/file_msg_server_conn.cpp > CMakeFiles/file_server.dir/file_msg_server_conn.cpp.i
 
 CMakeFiles/file_server.dir/file_msg_server_conn.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/file_server.dir/file_msg_server_conn.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jt/my_im/server/src/file_server/file_msg_server_conn.cpp -o CMakeFiles/file_server.dir/file_msg_server_conn.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/project-improve/my_im/server/src/file_server/file_msg_server_conn.cpp -o CMakeFiles/file_server.dir/file_msg_server_conn.cpp.s
 
 CMakeFiles/file_server.dir/file_server.cpp.o: CMakeFiles/file_server.dir/flags.make
 CMakeFiles/file_server.dir/file_server.cpp.o: ../file_server.cpp
 CMakeFiles/file_server.dir/file_server.cpp.o: CMakeFiles/file_server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jt/my_im/server/src/file_server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/file_server.dir/file_server.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/file_server.dir/file_server.cpp.o -MF CMakeFiles/file_server.dir/file_server.cpp.o.d -o CMakeFiles/file_server.dir/file_server.cpp.o -c /home/jt/my_im/server/src/file_server/file_server.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/project-improve/my_im/server/src/file_server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/file_server.dir/file_server.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/file_server.dir/file_server.cpp.o -MF CMakeFiles/file_server.dir/file_server.cpp.o.d -o CMakeFiles/file_server.dir/file_server.cpp.o -c /root/project-improve/my_im/server/src/file_server/file_server.cpp
 
 CMakeFiles/file_server.dir/file_server.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/file_server.dir/file_server.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jt/my_im/server/src/file_server/file_server.cpp > CMakeFiles/file_server.dir/file_server.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/project-improve/my_im/server/src/file_server/file_server.cpp > CMakeFiles/file_server.dir/file_server.cpp.i
 
 CMakeFiles/file_server.dir/file_server.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/file_server.dir/file_server.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jt/my_im/server/src/file_server/file_server.cpp -o CMakeFiles/file_server.dir/file_server.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/project-improve/my_im/server/src/file_server/file_server.cpp -o CMakeFiles/file_server.dir/file_server.cpp.s
 
 CMakeFiles/file_server.dir/transfer_task.cpp.o: CMakeFiles/file_server.dir/flags.make
 CMakeFiles/file_server.dir/transfer_task.cpp.o: ../transfer_task.cpp
 CMakeFiles/file_server.dir/transfer_task.cpp.o: CMakeFiles/file_server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jt/my_im/server/src/file_server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/file_server.dir/transfer_task.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/file_server.dir/transfer_task.cpp.o -MF CMakeFiles/file_server.dir/transfer_task.cpp.o.d -o CMakeFiles/file_server.dir/transfer_task.cpp.o -c /home/jt/my_im/server/src/file_server/transfer_task.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/project-improve/my_im/server/src/file_server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/file_server.dir/transfer_task.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/file_server.dir/transfer_task.cpp.o -MF CMakeFiles/file_server.dir/transfer_task.cpp.o.d -o CMakeFiles/file_server.dir/transfer_task.cpp.o -c /root/project-improve/my_im/server/src/file_server/transfer_task.cpp
 
 CMakeFiles/file_server.dir/transfer_task.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/file_server.dir/transfer_task.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jt/my_im/server/src/file_server/transfer_task.cpp > CMakeFiles/file_server.dir/transfer_task.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/project-improve/my_im/server/src/file_server/transfer_task.cpp > CMakeFiles/file_server.dir/transfer_task.cpp.i
 
 CMakeFiles/file_server.dir/transfer_task.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/file_server.dir/transfer_task.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jt/my_im/server/src/file_server/transfer_task.cpp -o CMakeFiles/file_server.dir/transfer_task.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/project-improve/my_im/server/src/file_server/transfer_task.cpp -o CMakeFiles/file_server.dir/transfer_task.cpp.s
 
 CMakeFiles/file_server.dir/transfer_task_manager.cpp.o: CMakeFiles/file_server.dir/flags.make
 CMakeFiles/file_server.dir/transfer_task_manager.cpp.o: ../transfer_task_manager.cpp
 CMakeFiles/file_server.dir/transfer_task_manager.cpp.o: CMakeFiles/file_server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jt/my_im/server/src/file_server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/file_server.dir/transfer_task_manager.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/file_server.dir/transfer_task_manager.cpp.o -MF CMakeFiles/file_server.dir/transfer_task_manager.cpp.o.d -o CMakeFiles/file_server.dir/transfer_task_manager.cpp.o -c /home/jt/my_im/server/src/file_server/transfer_task_manager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/project-improve/my_im/server/src/file_server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/file_server.dir/transfer_task_manager.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/file_server.dir/transfer_task_manager.cpp.o -MF CMakeFiles/file_server.dir/transfer_task_manager.cpp.o.d -o CMakeFiles/file_server.dir/transfer_task_manager.cpp.o -c /root/project-improve/my_im/server/src/file_server/transfer_task_manager.cpp
 
 CMakeFiles/file_server.dir/transfer_task_manager.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/file_server.dir/transfer_task_manager.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jt/my_im/server/src/file_server/transfer_task_manager.cpp > CMakeFiles/file_server.dir/transfer_task_manager.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/project-improve/my_im/server/src/file_server/transfer_task_manager.cpp > CMakeFiles/file_server.dir/transfer_task_manager.cpp.i
 
 CMakeFiles/file_server.dir/transfer_task_manager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/file_server.dir/transfer_task_manager.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jt/my_im/server/src/file_server/transfer_task_manager.cpp -o CMakeFiles/file_server.dir/transfer_task_manager.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/project-improve/my_im/server/src/file_server/transfer_task_manager.cpp -o CMakeFiles/file_server.dir/transfer_task_manager.cpp.s
 
 # Object files for target file_server
 file_server_OBJECTS = \
@@ -173,7 +173,7 @@ file_server: CMakeFiles/file_server.dir/transfer_task.cpp.o
 file_server: CMakeFiles/file_server.dir/transfer_task_manager.cpp.o
 file_server: CMakeFiles/file_server.dir/build.make
 file_server: CMakeFiles/file_server.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jt/my_im/server/src/file_server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable file_server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/root/project-improve/my_im/server/src/file_server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable file_server"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/file_server.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -185,6 +185,6 @@ CMakeFiles/file_server.dir/clean:
 .PHONY : CMakeFiles/file_server.dir/clean
 
 CMakeFiles/file_server.dir/depend:
-	cd /home/jt/my_im/server/src/file_server/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jt/my_im/server/src/file_server /home/jt/my_im/server/src/file_server /home/jt/my_im/server/src/file_server/build /home/jt/my_im/server/src/file_server/build /home/jt/my_im/server/src/file_server/build/CMakeFiles/file_server.dir/DependInfo.cmake --color=$(COLOR)
+	cd /root/project-improve/my_im/server/src/file_server/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/project-improve/my_im/server/src/file_server /root/project-improve/my_im/server/src/file_server /root/project-improve/my_im/server/src/file_server/build /root/project-improve/my_im/server/src/file_server/build /root/project-improve/my_im/server/src/file_server/build/CMakeFiles/file_server.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/file_server.dir/depend
 

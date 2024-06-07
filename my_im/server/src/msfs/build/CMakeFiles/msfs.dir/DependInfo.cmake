@@ -8,11 +8,11 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/jt/my_im/server/src/msfs/FileLin.cpp" "CMakeFiles/msfs.dir/FileLin.cpp.o" "gcc" "CMakeFiles/msfs.dir/FileLin.cpp.o.d"
-  "/home/jt/my_im/server/src/msfs/FileManager.cpp" "CMakeFiles/msfs.dir/FileManager.cpp.o" "gcc" "CMakeFiles/msfs.dir/FileManager.cpp.o.d"
-  "/home/jt/my_im/server/src/msfs/HttpConn.cpp" "CMakeFiles/msfs.dir/HttpConn.cpp.o" "gcc" "CMakeFiles/msfs.dir/HttpConn.cpp.o.d"
-  "/home/jt/my_im/server/src/msfs/StringUtils.cpp" "CMakeFiles/msfs.dir/StringUtils.cpp.o" "gcc" "CMakeFiles/msfs.dir/StringUtils.cpp.o.d"
-  "/home/jt/my_im/server/src/msfs/main.cpp" "CMakeFiles/msfs.dir/main.cpp.o" "gcc" "CMakeFiles/msfs.dir/main.cpp.o.d"
+  "/root/project-improve/my_im/server/src/msfs/FileLin.cpp" "CMakeFiles/msfs.dir/FileLin.cpp.o" "gcc" "CMakeFiles/msfs.dir/FileLin.cpp.o.d"
+  "/root/project-improve/my_im/server/src/msfs/FileManager.cpp" "CMakeFiles/msfs.dir/FileManager.cpp.o" "gcc" "CMakeFiles/msfs.dir/FileManager.cpp.o.d"
+  "/root/project-improve/my_im/server/src/msfs/HttpConn.cpp" "CMakeFiles/msfs.dir/HttpConn.cpp.o" "gcc" "CMakeFiles/msfs.dir/HttpConn.cpp.o.d"
+  "/root/project-improve/my_im/server/src/msfs/StringUtils.cpp" "CMakeFiles/msfs.dir/StringUtils.cpp.o" "gcc" "CMakeFiles/msfs.dir/StringUtils.cpp.o.d"
+  "/root/project-improve/my_im/server/src/msfs/main.cpp" "CMakeFiles/msfs.dir/main.cpp.o" "gcc" "CMakeFiles/msfs.dir/main.cpp.o.d"
   )
 
 # Targets to which this target links.

@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DAC_HAS_CRITICAL -DAC_HAS_DEBUG -DAC_HAS_ERROR -DAC_HAS_INFO -DAC_HAS_WARNING -DLINUX_DAEMON -DTIXML_USE_STL -D_FILE_OFFSET_BITS=64 -D_REENTRANT -Dslog_EXPORTS
 
-CXX_INCLUDES = -I/home/jt/my_im/server/src/slog/. -I/home/jt/my_im/server/src/slog/./include -I/home/jt/my_im/server/src/slog/./include/log4cxx
+CXX_INCLUDES = -I/root/project-improve/my_im/server/src/slog/. -I/root/project-improve/my_im/server/src/slog/./include -I/root/project-improve/my_im/server/src/slog/./include/log4cxx
 
 CXX_FLAGS = -fPIC   -g -W -Wall
 

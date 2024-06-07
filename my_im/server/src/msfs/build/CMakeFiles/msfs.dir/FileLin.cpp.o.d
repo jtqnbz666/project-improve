@@ -1,6 +1,6 @@
 CMakeFiles/msfs.dir/FileLin.cpp.o: \
- /home/jt/my_im/server/src/msfs/FileLin.cpp /usr/include/stdc-predef.h \
- /usr/include/fcntl.h /usr/include/features.h \
+ /root/project-improve/my_im/server/src/msfs/FileLin.cpp \
+ /usr/include/stdc-predef.h /usr/include/fcntl.h /usr/include/features.h \
  /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
  /usr/include/x86_64-linux-gnu/bits/timesize.h \
@@ -67,8 +67,9 @@ CMakeFiles/msfs.dir/FileLin.cpp.o: \
  /usr/include/linux/limits.h \
  /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
  /usr/include/x86_64-linux-gnu/bits/dirent_ext.h \
- /home/jt/my_im/server/src/msfs/FileLin.h \
- /home/jt/my_im/server/src/msfs/Portable.h /usr/include/c++/11/string \
+ /root/project-improve/my_im/server/src/msfs/FileLin.h \
+ /root/project-improve/my_im/server/src/msfs/Portable.h \
+ /usr/include/c++/11/string \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h \

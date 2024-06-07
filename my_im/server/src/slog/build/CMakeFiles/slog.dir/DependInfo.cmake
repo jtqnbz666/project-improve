@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/jt/my_im/server/src/slog/slog_api.cpp" "CMakeFiles/slog.dir/slog_api.cpp.o" "gcc" "CMakeFiles/slog.dir/slog_api.cpp.o.d"
+  "/root/project-improve/my_im/server/src/slog/slog_api.cpp" "CMakeFiles/slog.dir/slog_api.cpp.o" "gcc" "CMakeFiles/slog.dir/slog_api.cpp.o.d"
   )
 
 # Targets to which this target links.

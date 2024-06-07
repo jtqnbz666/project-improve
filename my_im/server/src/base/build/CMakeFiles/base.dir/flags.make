@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DAC_HAS_CRITICAL -DAC_HAS_DEBUG -DAC_HAS_ERROR -DAC_HAS_INFO -DAC_HAS_WARNING -DLINUX_DAEMON -DTIXML_USE_STL -D_FILE_OFFSET_BITS=64 -D_REENTRANT
 
-CXX_INCLUDES = -I/home/jt/my_im/server/src/base/. -I/home/jt/my_im/server/src/base/.. -I/home/jt/my_im/server/src/base/./pb/protocol -I/home/jt/my_im/server/src/base/./jsoncpp
+CXX_INCLUDES = -I/root/project-improve/my_im/server/src/base/. -I/root/project-improve/my_im/server/src/base/.. -I/root/project-improve/my_im/server/src/base/./pb/protocol -I/root/project-improve/my_im/server/src/base/./jsoncpp
 
 CXX_FLAGS =   -g -W -Wall
 

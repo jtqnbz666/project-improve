@@ -1,0 +1,13 @@
+2024-04-19 15:06:47,255 [INFO  IM] - <main.cpp>|<97>|<main>,MsgServe max files can open:65535
+2024-04-19 15:06:47,255 [INFO  IM] - <main.cpp>|<111>|<main>,127.0.0.1,8700
+2024-04-19 15:06:47,255 [INFO  IM] - <ThreadPool.cpp>|<25>|<Execute>,thread_-1971337664 create!
+2024-04-19 15:06:47,256 [INFO  IM] - <ThreadPool.cpp>|<25>|<Execute>,thread_-1979730368 create!
+2024-04-19 15:06:47,256 [INFO  IM] - <ThreadPool.cpp>|<25>|<Execute>,thread_-2080377280 create!
+2024-04-19 15:06:47,256 [INFO  IM] - <ThreadPool.cpp>|<25>|<Execute>,thread_-2122340800 create!
+2024-04-19 15:06:47,256 [INFO  IM] - <ThreadPool.cpp>|<25>|<Execute>,thread_-2088769984 create!
+2024-04-19 15:06:47,256 [INFO  IM] - <ThreadPool.cpp>|<25>|<Execute>,thread_-1988123072 create!
+2024-04-19 15:06:47,256 [INFO  IM] - <ThreadPool.cpp>|<25>|<Execute>,thread_-1996515776 create!
+2024-04-19 15:06:47,256 [INFO  IM] - <ThreadPool.cpp>|<25>|<Execute>,thread_-2097162688 create!
+2024-04-19 15:06:47,257 [INFO  IM] - <ThreadPool.cpp>|<25>|<Execute>,thread_-2105555392 create!
+2024-04-19 15:18:04,706 [INFO  IM] - <main.cpp>|<73>|<Stop>,receive signal:2
+2024-04-19 15:18:04,706 [INFO  IM] - <main.cpp>|<69>|<doQuitJob>,I,m ready quit...

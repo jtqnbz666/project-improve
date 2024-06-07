@@ -1,3 +1,0 @@
-/root/project-improve/my_im/server/src/db_proxy_server/build/CMakeFiles/db_proxy_server.dir
-/root/project-improve/my_im/server/src/db_proxy_server/build/CMakeFiles/edit_cache.dir
-/root/project-improve/my_im/server/src/db_proxy_server/build/CMakeFiles/rebuild_cache.dir

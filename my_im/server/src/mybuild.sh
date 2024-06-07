@@ -106,19 +106,21 @@ build() {
 
 clean() {
     cd base/build
-    make clean
+    rm -rf *
     cd ../../login_server/build
-    make clean
+    rm -rf *
     cd ../../route_server/build
-    make clean
+    rm -rf *
     cd ../../msg_server/build
-    make clean
+    rm -rf *
     cd ../../http_msg_server/build
-    make clean
+    rm -rf *
     cd ../../file_server/build
-    make clean
+    rm -rf *
     cd ../../db_proxy_server/build
-    make clean
+    rm -rf *
+    cd ../../slog/build
+    rm -rf *
 }
 
 case $1 in

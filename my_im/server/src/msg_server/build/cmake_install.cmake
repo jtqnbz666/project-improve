@@ -1,4 +1,4 @@
-# Install script for directory: /home/jt/my_im/server/src/msg_server
+# Install script for directory: /root/project-improve/my_im/server/src/msg_server
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/jt/my_im/server/src/msg_server/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/root/project-improve/my_im/server/src/msg_server/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

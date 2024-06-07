@@ -1,6 +1,6 @@
 
 INSTALL_DIR=.
-IM_SERVER=im-server-*
+IM_SERVER=own-im-server-*
 
 FILE_SERVER=file_server
 LOGIN_SERVER=login_server
@@ -35,11 +35,11 @@ check_user() {
 build_im_server() {
 
     #yum -y install yum-fastestmirror
-    clean_yum
+    #clean_yum
     #yum -y install libuuid-devel
     #yum -y install apr-util-devel
-    mkdir -p $INSTALL_DIR
-    tar zxvf $IM_SERVER.tar.gz -C $INSTALL_DIR/
+    #mkdir -p $INSTALL_DIR
+    #tar zxvf $IM_SERVER.tar.gz -C $INSTALL_DIR/
     if [ $? -eq 0 ]; then
         echo "unzip im-server successed."
         set -x

@@ -246,7 +246,7 @@ void CFileServConn::_HandleFileMsgTransRsp(CImPdu* pPdu)
         pdu2.SetPBMsg(&msg3);
         pdu2.SetServiceId(SID_FILE);
         pdu2.SetCommandId(CID_FILE_NOTIFY);
-        
+         
         //send notify to target user
         CImUser* pToUser = CImUserManager::GetInstance()->GetImUserById(to_id);
         if (pToUser) //如果在当前msgserv上找到to_userid，则直接把信息发给送它
