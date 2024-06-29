@@ -1,3 +1,3 @@
 #!/bin/bash
- protoc --cpp_out=./cggProto message.proto base.proto
- protoc --csharp_out=./csharpProto message.proto base.proto
+ protoc --cpp_out=./cggProto message.proto 
+ protoc --csharp_out=./csharpProto message.proto 

@@ -111,26 +111,26 @@ CMakeFiles/MyProject.dir/api/MoveHandle.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyProject.dir/api/MoveHandle.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jt/project-improve/fpsServer/api/MoveHandle.cpp -o CMakeFiles/MyProject.dir/api/MoveHandle.cpp.s
 
-CMakeFiles/MyProject.dir/api/RouterRegister.cpp.o: CMakeFiles/MyProject.dir/flags.make
-CMakeFiles/MyProject.dir/api/RouterRegister.cpp.o: ../api/RouterRegister.cpp
-CMakeFiles/MyProject.dir/api/RouterRegister.cpp.o: CMakeFiles/MyProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jt/project-improve/fpsServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/MyProject.dir/api/RouterRegister.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyProject.dir/api/RouterRegister.cpp.o -MF CMakeFiles/MyProject.dir/api/RouterRegister.cpp.o.d -o CMakeFiles/MyProject.dir/api/RouterRegister.cpp.o -c /home/jt/project-improve/fpsServer/api/RouterRegister.cpp
+CMakeFiles/MyProject.dir/proto/cggProto/message.pb.cc.o: CMakeFiles/MyProject.dir/flags.make
+CMakeFiles/MyProject.dir/proto/cggProto/message.pb.cc.o: ../proto/cggProto/message.pb.cc
+CMakeFiles/MyProject.dir/proto/cggProto/message.pb.cc.o: CMakeFiles/MyProject.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jt/project-improve/fpsServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/MyProject.dir/proto/cggProto/message.pb.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyProject.dir/proto/cggProto/message.pb.cc.o -MF CMakeFiles/MyProject.dir/proto/cggProto/message.pb.cc.o.d -o CMakeFiles/MyProject.dir/proto/cggProto/message.pb.cc.o -c /home/jt/project-improve/fpsServer/proto/cggProto/message.pb.cc
 
-CMakeFiles/MyProject.dir/api/RouterRegister.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MyProject.dir/api/RouterRegister.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jt/project-improve/fpsServer/api/RouterRegister.cpp > CMakeFiles/MyProject.dir/api/RouterRegister.cpp.i
+CMakeFiles/MyProject.dir/proto/cggProto/message.pb.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MyProject.dir/proto/cggProto/message.pb.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jt/project-improve/fpsServer/proto/cggProto/message.pb.cc > CMakeFiles/MyProject.dir/proto/cggProto/message.pb.cc.i
 
-CMakeFiles/MyProject.dir/api/RouterRegister.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyProject.dir/api/RouterRegister.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jt/project-improve/fpsServer/api/RouterRegister.cpp -o CMakeFiles/MyProject.dir/api/RouterRegister.cpp.s
+CMakeFiles/MyProject.dir/proto/cggProto/message.pb.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyProject.dir/proto/cggProto/message.pb.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jt/project-improve/fpsServer/proto/cggProto/message.pb.cc -o CMakeFiles/MyProject.dir/proto/cggProto/message.pb.cc.s
 
 # Object files for target MyProject
 MyProject_OBJECTS = \
 "CMakeFiles/MyProject.dir/server.cpp.o" \
 "CMakeFiles/MyProject.dir/MsgConn.cpp.o" \
 "CMakeFiles/MyProject.dir/api/MoveHandle.cpp.o" \
-"CMakeFiles/MyProject.dir/api/RouterRegister.cpp.o"
+"CMakeFiles/MyProject.dir/proto/cggProto/message.pb.cc.o"
 
 # External object files for target MyProject
 MyProject_EXTERNAL_OBJECTS =
@@ -138,9 +138,10 @@ MyProject_EXTERNAL_OBJECTS =
 MyProject: CMakeFiles/MyProject.dir/server.cpp.o
 MyProject: CMakeFiles/MyProject.dir/MsgConn.cpp.o
 MyProject: CMakeFiles/MyProject.dir/api/MoveHandle.cpp.o
-MyProject: CMakeFiles/MyProject.dir/api/RouterRegister.cpp.o
+MyProject: CMakeFiles/MyProject.dir/proto/cggProto/message.pb.cc.o
 MyProject: CMakeFiles/MyProject.dir/build.make
 MyProject: base/libbase.a
+MyProject: /usr/local/lib/libprotobuf.so
 MyProject: CMakeFiles/MyProject.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jt/project-improve/fpsServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable MyProject"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/MyProject.dir/link.txt --verbose=$(VERBOSE)

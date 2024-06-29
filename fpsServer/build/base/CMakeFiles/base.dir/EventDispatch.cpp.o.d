@@ -214,23 +214,101 @@ base/CMakeFiles/base.dir/EventDispatch.cpp.o: \
  /usr/include/c++/11/bits/basic_ios.tcc \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
  /usr/include/c++/11/bits/istream.tcc \
+ /usr/include/google/protobuf/message.h /usr/include/c++/11/vector \
+ /usr/include/c++/11/bits/stl_uninitialized.h \
+ /usr/include/c++/11/bits/stl_vector.h \
+ /usr/include/c++/11/bits/stl_bvector.h \
+ /usr/include/c++/11/bits/vector.tcc \
+ /usr/include/google/protobuf/stubs/casts.h \
+ /usr/include/google/protobuf/stubs/common.h \
+ /usr/include/c++/11/algorithm /usr/include/c++/11/utility \
+ /usr/include/c++/11/bits/stl_relops.h \
+ /usr/include/c++/11/bits/stl_algo.h \
+ /usr/include/c++/11/bits/algorithmfwd.h \
+ /usr/include/c++/11/bits/stl_heap.h \
+ /usr/include/c++/11/bits/stl_tempbuf.h \
+ /usr/include/c++/11/bits/uniform_int_dist.h /usr/include/c++/11/map \
+ /usr/include/c++/11/bits/stl_tree.h \
+ /usr/include/c++/11/ext/aligned_buffer.h \
+ /usr/include/c++/11/bits/stl_map.h /usr/include/c++/11/tuple \
+ /usr/include/c++/11/array /usr/include/c++/11/bits/uses_allocator.h \
+ /usr/include/c++/11/bits/invoke.h \
+ /usr/include/c++/11/bits/stl_multimap.h \
+ /usr/include/c++/11/bits/erase_if.h /usr/include/c++/11/memory \
+ /usr/include/c++/11/bits/stl_raw_storage_iter.h \
+ /usr/include/c++/11/bits/align.h /usr/include/c++/11/bit \
+ /usr/include/c++/11/bits/unique_ptr.h \
+ /usr/include/c++/11/bits/shared_ptr.h \
+ /usr/include/c++/11/bits/shared_ptr_base.h \
+ /usr/include/c++/11/bits/allocated_ptr.h \
+ /usr/include/c++/11/bits/refwrap.h /usr/include/c++/11/ext/concurrence.h \
+ /usr/include/c++/11/bits/shared_ptr_atomic.h \
+ /usr/include/c++/11/bits/atomic_base.h \
+ /usr/include/c++/11/bits/atomic_lockfree_defines.h \
+ /usr/include/c++/11/backward/auto_ptr.h /usr/include/c++/11/set \
+ /usr/include/c++/11/bits/stl_set.h \
+ /usr/include/c++/11/bits/stl_multiset.h \
+ /usr/include/google/protobuf/stubs/port.h /usr/include/c++/11/cstddef \
+ /usr/include/google/protobuf/stubs/platform_macros.h \
+ /usr/include/google/protobuf/port_def.inc \
+ /usr/include/x86_64-linux-gnu/sys/param.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h \
+ /usr/include/limits.h /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/local_lim.h \
+ /usr/include/linux/limits.h \
+ /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/param.h /usr/include/linux/param.h \
+ /usr/include/x86_64-linux-gnu/asm/param.h \
+ /usr/include/asm-generic/param.h /usr/include/byteswap.h \
+ /usr/include/google/protobuf/port_undef.inc \
+ /usr/include/google/protobuf/stubs/macros.h \
+ /usr/include/google/protobuf/arena.h /usr/include/c++/11/limits \
+ /usr/include/google/protobuf/arena_impl.h /usr/include/c++/11/atomic \
+ /usr/include/google/protobuf/stubs/logging.h \
+ /usr/include/google/protobuf/port.h \
+ /usr/include/google/protobuf/descriptor.h \
+ /usr/include/google/protobuf/stubs/mutex.h /usr/include/c++/11/mutex \
+ /usr/include/c++/11/chrono /usr/include/c++/11/ratio \
+ /usr/include/c++/11/ctime /usr/include/c++/11/bits/parse_numbers.h \
+ /usr/include/c++/11/bits/std_mutex.h \
+ /usr/include/c++/11/bits/unique_lock.h \
+ /usr/include/google/protobuf/stubs/once.h \
+ /usr/include/google/protobuf/generated_message_reflection.h \
+ /usr/include/google/protobuf/generated_enum_reflection.h \
+ /usr/include/google/protobuf/generated_enum_util.h \
+ /usr/include/google/protobuf/message_lite.h /usr/include/c++/11/climits \
+ /usr/include/google/protobuf/io/coded_stream.h \
+ /usr/include/c++/11/cstring /usr/include/google/protobuf/stubs/strutil.h \
+ /usr/include/google/protobuf/stubs/stringpiece.h \
+ /usr/include/google/protobuf/stubs/hash.h \
+ /usr/include/c++/11/unordered_map /usr/include/c++/11/bits/hashtable.h \
+ /usr/include/c++/11/bits/hashtable_policy.h \
+ /usr/include/c++/11/bits/enable_special_members.h \
+ /usr/include/c++/11/bits/unordered_map.h \
+ /usr/include/c++/11/unordered_set \
+ /usr/include/c++/11/bits/unordered_set.h \
+ /usr/include/google/protobuf/metadata_lite.h \
+ /usr/include/google/protobuf/unknown_field_set.h \
+ /usr/include/google/protobuf/parse_context.h \
+ /usr/include/google/protobuf/io/zero_copy_stream.h \
+ /usr/include/google/protobuf/arenastring.h \
+ /usr/include/google/protobuf/stubs/fastmem.h \
+ /usr/include/google/protobuf/implicit_weak_message.h \
+ /usr/include/google/protobuf/repeated_field.h \
+ /usr/include/c++/11/iterator /usr/include/c++/11/bits/stream_iterator.h \
+ /usr/include/google/protobuf/wire_format_lite.h \
+ /usr/include/google/protobuf/io/zero_copy_stream_impl_lite.h \
+ /usr/include/google/protobuf/stubs/callback.h \
+ /usr/include/google/protobuf/stubs/stl_util.h \
+ /usr/include/google/protobuf/io/zero_copy_stream_impl.h \
  /home/jt/project-improve/fpsServer/base/BaseConn.h \
  /home/jt/project-improve/fpsServer/base/InfiNet.h \
  /home/jt/project-improve/fpsServer/base/BasePdu.h \
  /home/jt/project-improve/fpsServer/base/PduUtil.h \
- /usr/include/c++/11/unordered_map \
- /usr/include/c++/11/ext/aligned_buffer.h \
- /usr/include/c++/11/bits/hashtable.h \
- /usr/include/c++/11/bits/hashtable_policy.h /usr/include/c++/11/tuple \
- /usr/include/c++/11/utility /usr/include/c++/11/bits/stl_relops.h \
- /usr/include/c++/11/array /usr/include/c++/11/bits/uses_allocator.h \
- /usr/include/c++/11/bits/invoke.h \
- /usr/include/c++/11/bits/enable_special_members.h \
- /usr/include/c++/11/bits/unordered_map.h \
- /usr/include/c++/11/bits/erase_if.h \
  /home/jt/project-improve/fpsServer/base/ThreadPool.h \
  /home/jt/project-improve/fpsServer/base/Task.h /usr/include/c++/11/list \
- /usr/include/c++/11/bits/stl_list.h \
- /usr/include/c++/11/bits/allocated_ptr.h \
- /usr/include/c++/11/bits/list.tcc \
+ /usr/include/c++/11/bits/stl_list.h /usr/include/c++/11/bits/list.tcc \
  /home/jt/project-improve/fpsServer/base/Router.h

@@ -2,7 +2,8 @@
 #define MOVEHANDLE_H
 #include "RouterFactory.h"
 #include "BasePdu.h"
-
+#include "BaseConn.h"
+#include "message.pb.h"
 class MoveHandle : public Router {
 public:
     virtual void Handle(InfiPdu* pdu);

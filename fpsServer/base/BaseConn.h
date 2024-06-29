@@ -7,7 +7,6 @@
 #include <unordered_map>
 #include "PduUtil.h"
 #include "ThreadPool.h"
-#include "BasePdu.h"
 
 using namespace std;
 
@@ -19,6 +18,7 @@ enum {
     SOCKET_STATE_CLOSING
 };
 
+class InfiPdu;
 
 #define READ_BUF_SIZE               2048
 
@@ -34,12 +34,8 @@ public:
     void SetCallback(callbackFunc cbFunc) { m_cbFunc = cbFunc; }
     void SetCallbackData(void* cbData) { m_cbData = cbData; }
    
-
-
     uchar_t* GetReadBuffer() { return m_readBuf.GetBuffer(); }
     uchar_t* GetWriteBuffer() { return m_writeBuf.GetBuffer(); }
-
-
 
     void SetRemoteIP(string ip) { m_remoteIp = ip; }
     void SetRemotePort(uint16_t port) { m_remotePort = port; }
@@ -51,13 +47,15 @@ public:
     string GetRemoteIP() { return m_remoteIp; }
     uint16_t GetRemotePort() { return m_remotePort; }
 
-public:
+    int Send(void* data, uint32_t len);
+    int SendPdu(InfiPdu* pdu);
+
     int UDPListen(const char* server_ip, uint16_t port, callbackFunc cbFunc, void* cbData);
     void Accept();
     void UDPAccept();
     int Connect(const char* server_ip, uint16_t port, callbackFunc cbFunc, void* cbData);
-    int UDPSend(void* buf, int len);
-    int UDPRecv(void* buf, int len);
+    
+
 
     void OnRead();
     void OnWrite();
@@ -68,9 +66,6 @@ public:
 
 
     static unordered_map<int, BaseConn*> globalSocketMap;
-    void OnTcpRead();
-    void OnUdpRead();
-
 private:
  
 
@@ -92,6 +87,7 @@ private:
     uint8_t         m_state;
     int             m_socket;
     bool            m_isTcpMode;
+    bool            m_sending;
 
     InfiBuffer       m_readBuf;       //读写缓冲区分开
     InfiBuffer       m_writeBuf;

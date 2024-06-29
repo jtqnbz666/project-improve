@@ -10,7 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/jt/project-improve/fpsServer/MsgConn.cpp" "CMakeFiles/MyProject.dir/MsgConn.cpp.o" "gcc" "CMakeFiles/MyProject.dir/MsgConn.cpp.o.d"
   "/home/jt/project-improve/fpsServer/api/MoveHandle.cpp" "CMakeFiles/MyProject.dir/api/MoveHandle.cpp.o" "gcc" "CMakeFiles/MyProject.dir/api/MoveHandle.cpp.o.d"
-  "/home/jt/project-improve/fpsServer/api/RouterRegister.cpp" "CMakeFiles/MyProject.dir/api/RouterRegister.cpp.o" "gcc" "CMakeFiles/MyProject.dir/api/RouterRegister.cpp.o.d"
+  "/home/jt/project-improve/fpsServer/proto/cggProto/message.pb.cc" "CMakeFiles/MyProject.dir/proto/cggProto/message.pb.cc.o" "gcc" "CMakeFiles/MyProject.dir/proto/cggProto/message.pb.cc.o.d"
   "/home/jt/project-improve/fpsServer/server.cpp" "CMakeFiles/MyProject.dir/server.cpp.o" "gcc" "CMakeFiles/MyProject.dir/server.cpp.o.d"
   )
 

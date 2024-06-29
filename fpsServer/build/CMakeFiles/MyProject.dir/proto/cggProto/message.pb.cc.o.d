@@ -1,10 +1,8 @@
-CMakeFiles/MyProject.dir/api/RouterRegister.cpp.o: \
- /home/jt/project-improve/fpsServer/api/RouterRegister.cpp \
+CMakeFiles/MyProject.dir/proto/cggProto/message.pb.cc.o: \
+ /home/jt/project-improve/fpsServer/proto/cggProto/message.pb.cc \
  /usr/include/stdc-predef.h \
- /home/jt/project-improve/fpsServer/api/RouterRegister.h \
- /home/jt/project-improve/fpsServer/api/MoveHandle.h \
- /home/jt/project-improve/fpsServer/base/RouterFactory.h \
- /usr/include/c++/11/unordered_map /usr/include/c++/11/type_traits \
+ /home/jt/project-improve/fpsServer/proto/cggProto/message.pb.h \
+ /usr/include/c++/11/limits \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -15,48 +13,24 @@ CMakeFiles/MyProject.dir/api/RouterRegister.cpp.o: \
  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h \
- /usr/include/c++/11/initializer_list \
- /usr/include/c++/11/bits/allocator.h \
- /usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h \
- /usr/include/c++/11/ext/new_allocator.h /usr/include/c++/11/new \
- /usr/include/c++/11/bits/exception.h \
+ /usr/include/c++/11/string /usr/include/c++/11/bits/stringfwd.h \
+ /usr/include/c++/11/bits/memoryfwd.h \
+ /usr/include/c++/11/bits/char_traits.h \
+ /usr/include/c++/11/bits/stl_algobase.h \
  /usr/include/c++/11/bits/functexcept.h \
  /usr/include/c++/11/bits/exception_defines.h \
- /usr/include/c++/11/bits/move.h /usr/include/c++/11/bits/memoryfwd.h \
- /usr/include/c++/11/ext/alloc_traits.h \
- /usr/include/c++/11/bits/alloc_traits.h \
- /usr/include/c++/11/bits/stl_construct.h \
+ /usr/include/c++/11/bits/cpp_type_traits.h \
+ /usr/include/c++/11/ext/type_traits.h \
+ /usr/include/c++/11/ext/numeric_traits.h \
+ /usr/include/c++/11/bits/stl_pair.h /usr/include/c++/11/bits/move.h \
+ /usr/include/c++/11/type_traits \
  /usr/include/c++/11/bits/stl_iterator_base_types.h \
  /usr/include/c++/11/bits/stl_iterator_base_funcs.h \
  /usr/include/c++/11/bits/concept_check.h \
  /usr/include/c++/11/debug/assertions.h \
- /usr/include/c++/11/bits/ptr_traits.h \
- /usr/include/c++/11/ext/numeric_traits.h \
- /usr/include/c++/11/bits/cpp_type_traits.h \
- /usr/include/c++/11/ext/type_traits.h \
- /usr/include/c++/11/ext/aligned_buffer.h \
- /usr/include/c++/11/bits/stl_pair.h \
- /usr/include/c++/11/bits/stl_function.h \
- /usr/include/c++/11/backward/binders.h \
- /usr/include/c++/11/bits/functional_hash.h \
- /usr/include/c++/11/bits/hash_bytes.h \
- /usr/include/c++/11/bits/hashtable.h \
- /usr/include/c++/11/bits/hashtable_policy.h /usr/include/c++/11/tuple \
- /usr/include/c++/11/utility /usr/include/c++/11/bits/stl_relops.h \
- /usr/include/c++/11/array /usr/include/c++/11/bits/stl_algobase.h \
  /usr/include/c++/11/bits/stl_iterator.h \
- /usr/include/c++/11/debug/debug.h \
+ /usr/include/c++/11/bits/ptr_traits.h /usr/include/c++/11/debug/debug.h \
  /usr/include/c++/11/bits/predefined_ops.h \
- /usr/include/c++/11/bits/range_access.h \
- /usr/include/c++/11/bits/uses_allocator.h \
- /usr/include/c++/11/bits/invoke.h \
- /usr/include/c++/11/bits/enable_special_members.h \
- /usr/include/c++/11/bits/unordered_map.h \
- /usr/include/c++/11/bits/erase_if.h /usr/include/c++/11/functional \
- /usr/include/c++/11/bits/refwrap.h \
- /usr/include/c++/11/bits/std_function.h /usr/include/c++/11/typeinfo \
- /usr/include/c++/11/string /usr/include/c++/11/bits/stringfwd.h \
- /usr/include/c++/11/bits/char_traits.h \
  /usr/include/c++/11/bits/postypes.h /usr/include/c++/11/cwchar \
  /usr/include/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
@@ -79,6 +53,10 @@ CMakeFiles/MyProject.dir/api/RouterRegister.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/time64.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+ /usr/include/c++/11/bits/allocator.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h \
+ /usr/include/c++/11/ext/new_allocator.h /usr/include/c++/11/new \
+ /usr/include/c++/11/bits/exception.h \
  /usr/include/c++/11/bits/localefwd.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h \
  /usr/include/c++/11/clocale /usr/include/locale.h \
@@ -88,6 +66,10 @@ CMakeFiles/MyProject.dir/api/RouterRegister.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/endianness.h \
  /usr/include/c++/11/bits/ostream_insert.h \
  /usr/include/c++/11/bits/cxxabi_forced.h \
+ /usr/include/c++/11/bits/stl_function.h \
+ /usr/include/c++/11/backward/binders.h \
+ /usr/include/c++/11/bits/range_access.h \
+ /usr/include/c++/11/initializer_list \
  /usr/include/c++/11/bits/basic_string.h \
  /usr/include/c++/11/ext/atomicity.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/gthr.h \
@@ -118,6 +100,9 @@ CMakeFiles/MyProject.dir/api/RouterRegister.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/atomic_word.h \
  /usr/include/x86_64-linux-gnu/sys/single_threaded.h \
+ /usr/include/c++/11/ext/alloc_traits.h \
+ /usr/include/c++/11/bits/alloc_traits.h \
+ /usr/include/c++/11/bits/stl_construct.h \
  /usr/include/c++/11/ext/string_conversions.h /usr/include/c++/11/cstdlib \
  /usr/include/stdlib.h /usr/include/x86_64-linux-gnu/bits/waitflags.h \
  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
@@ -140,83 +125,67 @@ CMakeFiles/MyProject.dir/api/RouterRegister.cpp.o: \
  /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
  /usr/include/c++/11/bits/charconv.h \
+ /usr/include/c++/11/bits/functional_hash.h \
+ /usr/include/c++/11/bits/hash_bytes.h \
  /usr/include/c++/11/bits/basic_string.tcc \
- /home/jt/project-improve/fpsServer/base/Router.h \
- /home/jt/project-improve/fpsServer/base/BasePdu.h \
- /home/jt/project-improve/fpsServer/base/CommType.h \
- /usr/include/x86_64-linux-gnu/sys/epoll.h \
- /usr/include/x86_64-linux-gnu/bits/epoll.h \
- /usr/include/x86_64-linux-gnu/sys/socket.h \
- /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
- /usr/include/x86_64-linux-gnu/bits/socket.h \
- /usr/include/x86_64-linux-gnu/bits/socket_type.h \
- /usr/include/x86_64-linux-gnu/bits/sockaddr.h \
- /usr/include/x86_64-linux-gnu/asm/socket.h \
- /usr/include/asm-generic/socket.h /usr/include/linux/posix_types.h \
- /usr/include/linux/stddef.h \
- /usr/include/x86_64-linux-gnu/asm/posix_types.h \
- /usr/include/x86_64-linux-gnu/asm/posix_types_64.h \
- /usr/include/asm-generic/posix_types.h \
- /usr/include/x86_64-linux-gnu/asm/bitsperlong.h \
- /usr/include/asm-generic/bitsperlong.h \
- /usr/include/x86_64-linux-gnu/asm/sockios.h \
- /usr/include/asm-generic/sockios.h \
- /usr/include/x86_64-linux-gnu/bits/types/struct_osockaddr.h \
- /usr/include/x86_64-linux-gnu/sys/ioctl.h \
- /usr/include/x86_64-linux-gnu/bits/ioctls.h \
- /usr/include/x86_64-linux-gnu/asm/ioctls.h \
- /usr/include/asm-generic/ioctls.h /usr/include/linux/ioctl.h \
- /usr/include/x86_64-linux-gnu/asm/ioctl.h \
- /usr/include/asm-generic/ioctl.h \
- /usr/include/x86_64-linux-gnu/bits/ioctl-types.h \
- /usr/include/x86_64-linux-gnu/sys/ttydefaults.h \
- /usr/include/netinet/in.h /usr/include/x86_64-linux-gnu/bits/in.h \
- /usr/include/netinet/tcp.h /usr/include/arpa/inet.h /usr/include/netdb.h \
- /usr/include/rpc/netdb.h \
- /usr/include/x86_64-linux-gnu/bits/types/sigevent_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/__sigval_t.h \
- /usr/include/x86_64-linux-gnu/bits/netdb.h /usr/include/unistd.h \
- /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
- /usr/include/x86_64-linux-gnu/bits/environments.h \
- /usr/include/x86_64-linux-gnu/bits/confname.h \
- /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
- /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
- /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
- /usr/include/linux/close_range.h /usr/include/fcntl.h \
- /usr/include/x86_64-linux-gnu/bits/fcntl.h \
- /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h \
- /usr/include/linux/falloc.h /usr/include/x86_64-linux-gnu/bits/stat.h \
- /usr/include/x86_64-linux-gnu/bits/struct_stat.h /usr/include/signal.h \
+ /usr/include/google/protobuf/port_def.inc \
+ /usr/include/google/protobuf/port_undef.inc \
+ /usr/include/google/protobuf/io/coded_stream.h /usr/include/assert.h \
+ /usr/include/c++/11/atomic /usr/include/c++/11/bits/atomic_base.h \
+ /usr/include/c++/11/bits/atomic_lockfree_defines.h \
+ /usr/include/c++/11/climits \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h \
+ /usr/include/limits.h /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/local_lim.h \
+ /usr/include/linux/limits.h \
+ /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/uio_lim.h /usr/include/c++/11/cstddef \
+ /usr/include/c++/11/cstring /usr/include/string.h /usr/include/strings.h \
+ /usr/include/c++/11/utility /usr/include/c++/11/bits/stl_relops.h \
+ /usr/include/x86_64-linux-gnu/sys/param.h /usr/include/signal.h \
  /usr/include/x86_64-linux-gnu/bits/signum-generic.h \
  /usr/include/x86_64-linux-gnu/bits/signum-arch.h \
  /usr/include/x86_64-linux-gnu/bits/types/sig_atomic_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/siginfo_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/__sigval_t.h \
  /usr/include/x86_64-linux-gnu/bits/siginfo-arch.h \
  /usr/include/x86_64-linux-gnu/bits/siginfo-consts.h \
  /usr/include/x86_64-linux-gnu/bits/siginfo-consts-arch.h \
  /usr/include/x86_64-linux-gnu/bits/types/sigval_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/sigevent_t.h \
  /usr/include/x86_64-linux-gnu/bits/sigevent-consts.h \
  /usr/include/x86_64-linux-gnu/bits/sigaction.h \
  /usr/include/x86_64-linux-gnu/bits/sigcontext.h \
  /usr/include/x86_64-linux-gnu/bits/types/stack_t.h \
  /usr/include/x86_64-linux-gnu/sys/ucontext.h \
  /usr/include/x86_64-linux-gnu/bits/sigstack.h \
- /usr/include/x86_64-linux-gnu/bits/sigstksz.h \
+ /usr/include/x86_64-linux-gnu/bits/sigstksz.h /usr/include/unistd.h \
+ /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
+ /usr/include/x86_64-linux-gnu/bits/environments.h \
+ /usr/include/x86_64-linux-gnu/bits/confname.h \
+ /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
+ /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
+ /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
+ /usr/include/linux/close_range.h \
  /usr/include/x86_64-linux-gnu/bits/ss_flags.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_sigstack.h \
  /usr/include/x86_64-linux-gnu/bits/sigthread.h \
  /usr/include/x86_64-linux-gnu/bits/signal_ext.h \
- /usr/include/c++/11/stdlib.h /usr/include/string.h \
- /usr/include/strings.h /usr/include/x86_64-linux-gnu/sys/wait.h \
- /usr/include/x86_64-linux-gnu/sys/time.h \
- /usr/include/x86_64-linux-gnu/sys/resource.h \
- /usr/include/x86_64-linux-gnu/bits/resource.h \
- /usr/include/x86_64-linux-gnu/bits/types/struct_rusage.h \
- /usr/include/assert.h /usr/include/c++/11/iostream \
+ /usr/include/x86_64-linux-gnu/bits/param.h /usr/include/linux/param.h \
+ /usr/include/x86_64-linux-gnu/asm/param.h \
+ /usr/include/asm-generic/param.h \
+ /usr/include/google/protobuf/stubs/common.h \
+ /usr/include/c++/11/algorithm /usr/include/c++/11/bits/stl_algo.h \
+ /usr/include/c++/11/bits/algorithmfwd.h \
+ /usr/include/c++/11/bits/stl_heap.h \
+ /usr/include/c++/11/bits/stl_tempbuf.h \
+ /usr/include/c++/11/bits/uniform_int_dist.h /usr/include/c++/11/iostream \
  /usr/include/c++/11/ostream /usr/include/c++/11/ios \
  /usr/include/c++/11/exception /usr/include/c++/11/bits/exception_ptr.h \
  /usr/include/c++/11/bits/cxxabi_init_exception.h \
- /usr/include/c++/11/bits/nested_exception.h \
+ /usr/include/c++/11/typeinfo /usr/include/c++/11/bits/nested_exception.h \
  /usr/include/c++/11/bits/ios_base.h \
  /usr/include/c++/11/bits/locale_classes.h \
  /usr/include/c++/11/bits/locale_classes.tcc \
@@ -233,13 +202,79 @@ CMakeFiles/MyProject.dir/api/RouterRegister.cpp.o: \
  /usr/include/c++/11/bits/locale_facets.tcc \
  /usr/include/c++/11/bits/basic_ios.tcc \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
- /usr/include/c++/11/bits/istream.tcc \
- /home/jt/project-improve/fpsServer/base/BaseConn.h \
- /home/jt/project-improve/fpsServer/base/InfiNet.h \
- /home/jt/project-improve/fpsServer/base/PduUtil.h \
- /home/jt/project-improve/fpsServer/base/ThreadPool.h \
- /home/jt/project-improve/fpsServer/base/Task.h /usr/include/c++/11/list \
- /usr/include/c++/11/bits/stl_list.h \
+ /usr/include/c++/11/bits/istream.tcc /usr/include/c++/11/map \
+ /usr/include/c++/11/bits/stl_tree.h \
+ /usr/include/c++/11/ext/aligned_buffer.h \
+ /usr/include/c++/11/bits/stl_map.h /usr/include/c++/11/tuple \
+ /usr/include/c++/11/array /usr/include/c++/11/bits/uses_allocator.h \
+ /usr/include/c++/11/bits/invoke.h \
+ /usr/include/c++/11/bits/stl_multimap.h \
+ /usr/include/c++/11/bits/erase_if.h /usr/include/c++/11/memory \
+ /usr/include/c++/11/bits/stl_uninitialized.h \
+ /usr/include/c++/11/bits/stl_raw_storage_iter.h \
+ /usr/include/c++/11/bits/align.h /usr/include/c++/11/bit \
+ /usr/include/c++/11/bits/unique_ptr.h \
+ /usr/include/c++/11/bits/shared_ptr.h \
+ /usr/include/c++/11/bits/shared_ptr_base.h \
  /usr/include/c++/11/bits/allocated_ptr.h \
- /usr/include/c++/11/bits/list.tcc \
- /home/jt/project-improve/fpsServer/base/BasePdu.h
+ /usr/include/c++/11/bits/refwrap.h /usr/include/c++/11/ext/concurrence.h \
+ /usr/include/c++/11/bits/shared_ptr_atomic.h \
+ /usr/include/c++/11/backward/auto_ptr.h /usr/include/c++/11/set \
+ /usr/include/c++/11/bits/stl_set.h \
+ /usr/include/c++/11/bits/stl_multiset.h /usr/include/c++/11/vector \
+ /usr/include/c++/11/bits/stl_vector.h \
+ /usr/include/c++/11/bits/stl_bvector.h \
+ /usr/include/c++/11/bits/vector.tcc \
+ /usr/include/google/protobuf/stubs/port.h /usr/include/c++/11/stdlib.h \
+ /usr/include/google/protobuf/stubs/platform_macros.h \
+ /usr/include/byteswap.h /usr/include/google/protobuf/stubs/macros.h \
+ /usr/include/google/protobuf/stubs/logging.h \
+ /usr/include/google/protobuf/stubs/strutil.h \
+ /usr/include/google/protobuf/stubs/stringpiece.h \
+ /usr/include/google/protobuf/stubs/hash.h \
+ /usr/include/c++/11/unordered_map /usr/include/c++/11/bits/hashtable.h \
+ /usr/include/c++/11/bits/hashtable_policy.h \
+ /usr/include/c++/11/bits/enable_special_members.h \
+ /usr/include/c++/11/bits/unordered_map.h \
+ /usr/include/c++/11/unordered_set \
+ /usr/include/c++/11/bits/unordered_set.h \
+ /usr/include/google/protobuf/port.h /usr/include/google/protobuf/arena.h \
+ /usr/include/google/protobuf/arena_impl.h \
+ /usr/include/google/protobuf/arenastring.h \
+ /usr/include/google/protobuf/stubs/fastmem.h \
+ /usr/include/google/protobuf/generated_message_table_driven.h \
+ /usr/include/google/protobuf/map.h /usr/include/c++/11/iterator \
+ /usr/include/c++/11/bits/stream_iterator.h \
+ /usr/include/google/protobuf/generated_enum_util.h \
+ /usr/include/google/protobuf/message_lite.h \
+ /usr/include/google/protobuf/metadata_lite.h \
+ /usr/include/google/protobuf/stubs/once.h /usr/include/c++/11/mutex \
+ /usr/include/c++/11/chrono /usr/include/c++/11/ratio \
+ /usr/include/c++/11/ctime /usr/include/c++/11/bits/parse_numbers.h \
+ /usr/include/c++/11/bits/std_mutex.h \
+ /usr/include/c++/11/bits/unique_lock.h \
+ /usr/include/google/protobuf/map_type_handler.h \
+ /usr/include/google/protobuf/parse_context.h \
+ /usr/include/google/protobuf/io/zero_copy_stream.h \
+ /usr/include/google/protobuf/implicit_weak_message.h \
+ /usr/include/google/protobuf/repeated_field.h \
+ /usr/include/google/protobuf/stubs/casts.h \
+ /usr/include/google/protobuf/wire_format_lite.h \
+ /usr/include/google/protobuf/map_entry_lite.h \
+ /usr/include/google/protobuf/generated_message_util.h \
+ /usr/include/google/protobuf/any.h \
+ /usr/include/google/protobuf/has_bits.h \
+ /usr/include/google/protobuf/map_field_lite.h \
+ /usr/include/google/protobuf/inlined_string_field.h \
+ /usr/include/google/protobuf/generated_message_reflection.h \
+ /usr/include/google/protobuf/descriptor.h \
+ /usr/include/google/protobuf/stubs/mutex.h \
+ /usr/include/google/protobuf/generated_enum_reflection.h \
+ /usr/include/google/protobuf/unknown_field_set.h \
+ /usr/include/google/protobuf/io/zero_copy_stream_impl_lite.h \
+ /usr/include/google/protobuf/stubs/callback.h \
+ /usr/include/google/protobuf/stubs/stl_util.h \
+ /usr/include/google/protobuf/message.h \
+ /usr/include/google/protobuf/extension_set.h /usr/include/c++/11/cassert \
+ /usr/include/google/protobuf/reflection_ops.h \
+ /usr/include/google/protobuf/wire_format.h

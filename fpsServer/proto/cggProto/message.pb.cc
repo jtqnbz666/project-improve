@@ -60,10 +60,10 @@ static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] =
 const char descriptor_table_protodef_message_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
   "\n\rmessage.proto\"U\n\010Position\022\t\n\001x\030\001 \001(\002\022\t"
   "\n\001y\030\002 \001(\002\022\t\n\001z\030\003 \001(\002\022\013\n\003yaw\030\004 \001(\002\022\r\n\005pit"
-  "ch\030\005 \001(\002\022\014\n\004roll\030\006 \001(\002*Y\n\010MsgCmdID\022\017\n\013CI"
-  "D_UNKNOWN\020\000\022\022\n\rCID_LOGIN_REQ\020\201\002\022\022\n\rCID_L"
-  "OGIN_RES\020\202\002\022\024\n\017CID_PLAYER_MOVE\020\203\002b\006proto"
-  "3"
+  "ch\030\005 \001(\002\022\014\n\004roll\030\006 \001(\002*Z\n\tCommandID\022\017\n\013C"
+  "ID_UNKNOWN\020\000\022\022\n\rCID_LOGIN_REQ\020\201\002\022\022\n\rCID_"
+  "LOGIN_RES\020\202\002\022\024\n\017CID_PLAYER_MOVE\020\203\002b\006prot"
+  "o3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_message_2eproto_deps[1] = {
 };
@@ -72,7 +72,7 @@ static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_mes
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_message_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_message_2eproto = {
-  false, false, descriptor_table_protodef_message_2eproto, "message.proto", 201,
+  false, false, descriptor_table_protodef_message_2eproto, "message.proto", 202,
   &descriptor_table_message_2eproto_once, descriptor_table_message_2eproto_sccs, descriptor_table_message_2eproto_deps, 1, 0,
   schemas, file_default_instances, TableStruct_message_2eproto::offsets,
   file_level_metadata_message_2eproto, 1, file_level_enum_descriptors_message_2eproto, file_level_service_descriptors_message_2eproto,
@@ -80,11 +80,11 @@ const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_messag
 
 // Force running AddDescriptors() at dynamic initialization time.
 static bool dynamic_init_dummy_message_2eproto = (static_cast<void>(::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_message_2eproto)), true);
-const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* MsgCmdID_descriptor() {
+const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* CommandID_descriptor() {
   ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_message_2eproto);
   return file_level_enum_descriptors_message_2eproto[0];
 }
-bool MsgCmdID_IsValid(int value) {
+bool CommandID_IsValid(int value) {
   switch (value) {
     case 0:
     case 257:

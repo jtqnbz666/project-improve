@@ -24,12 +24,12 @@ public static partial class MessageReflection {
         string.Concat(
           "Cg1tZXNzYWdlLnByb3RvIlUKCFBvc2l0aW9uEgkKAXgYASABKAISCQoBeRgC",
           "IAEoAhIJCgF6GAMgASgCEgsKA3lhdxgEIAEoAhINCgVwaXRjaBgFIAEoAhIM",
-          "CgRyb2xsGAYgASgCKlkKCE1zZ0NtZElEEg8KC0NJRF9VTktOT1dOEAASEgoN",
-          "Q0lEX0xPR0lOX1JFURCBAhISCg1DSURfTE9HSU5fUkVTEIICEhQKD0NJRF9Q",
-          "TEFZRVJfTU9WRRCDAmIGcHJvdG8z"));
+          "CgRyb2xsGAYgASgCKloKCUNvbW1hbmRJRBIPCgtDSURfVU5LTk9XThAAEhIK",
+          "DUNJRF9MT0dJTl9SRVEQgQISEgoNQ0lEX0xPR0lOX1JFUxCCAhIUCg9DSURf",
+          "UExBWUVSX01PVkUQgwJiBnByb3RvMw=="));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
-        new pbr::GeneratedClrTypeInfo(new[] {typeof(global::MsgCmdID), }, null, new pbr::GeneratedClrTypeInfo[] {
+        new pbr::GeneratedClrTypeInfo(new[] {typeof(global::CommandID), }, null, new pbr::GeneratedClrTypeInfo[] {
           new pbr::GeneratedClrTypeInfo(typeof(global::Position), global::Position.Parser, new[]{ "X", "Y", "Z", "Yaw", "Pitch", "Roll" }, null, null, null, null)
         }));
   }
@@ -37,7 +37,7 @@ public static partial class MessageReflection {
 
 }
 #region Enums
-public enum MsgCmdID {
+public enum CommandID {
   [pbr::OriginalName("CID_UNKNOWN")] CidUnknown = 0,
   [pbr::OriginalName("CID_LOGIN_REQ")] CidLoginReq = 257,
   [pbr::OriginalName("CID_LOGIN_RES")] CidLoginRes = 258,

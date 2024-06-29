@@ -1,7 +1,6 @@
 #ifndef BasePdu_H
 #define BasePdu_H
 #include "CommType.h"
-#include "BaseConn.h"
 #include "PduUtil.h"
 
 #define IM_PDU_HEADER_LEN           6
@@ -34,17 +33,20 @@ public:
     void ReadPduHeader(uchar_t* buf);
     void Write(uchar_t* buf, uint32_t len) { m_buf.Write((void*)buf, len); }
     void SetBaseConn(BaseConn* baseConn) { m_conn = baseConn;}
+    void WritePduHeader();
 
     uchar_t* GetBuffer() { return m_buf.GetBuffer(); }
     uint32_t GetPduLength() { return m_header.length; }
     uint32_t GetBufferLength() { return m_buf.GetWriteOffset(); }
     uint16_t GetCommandID() { return m_header.commandID; }
     uint16_t GetSeqNum() { return m_header.seqNum; }
-    
     BaseConn* GetBaseConn() { return m_conn; }
-
     uchar_t* GetBodyData() { return m_buf.GetBuffer() + sizeof(PduHeader); }
     uint32_t GetBodyLength() { return m_buf.GetWriteOffset() - sizeof(PduHeader); }
+
+    void SetBodyData(const google::protobuf::Message& msg);
+    void SetCommandID(uint16_t id) { m_header.commandID = id; }
+    void SetSeqNum(uint16_t seqNum) { m_header.seqNum = seqNum; }
     
 
 private:

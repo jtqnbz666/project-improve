@@ -1,4 +1,5 @@
 #include "BasePdu.h"
+#include "BaseConn.h"
 
 
 
@@ -19,11 +20,29 @@ InfiPdu* InfiPdu::ReadPdu(uchar_t* buf, uint32_t len) {
     pdu = new InfiPdu();
     pdu->Write(buf, len); 
     pdu->ReadPduHeader(buf);
-    
 
-   
     return pdu;
 }
+
+void InfiPdu::SetBodyData(const google::protobuf::Message& msg) {
+    m_buf.Read(NULL, m_buf.GetWriteOffset()); 
+    m_buf.Write(NULL, sizeof(PduHeader));
+
+    uint32_t msg_size = msg.ByteSize();
+    uchar_t* szData = new uchar_t[msg_size];
+    if (!msg.SerializeToArray(szData, msg_size)) {
+        perror("Failed to serialize protobuf message.");
+        delete[] szData;
+        return;
+    }
+
+    m_buf.Write(szData, msg_size);
+
+    delete[] szData;
+
+    WritePduHeader();
+}
+
 
 uint32_t InfiBuffer::Write(void* buf, uint32_t len) {
 	if (m_writeOffset + len > m_allocSize)
@@ -63,10 +82,21 @@ void InfiPdu::ReadPduHeader (uchar_t* buf) {
     uint16_t commandID = ByteStream::ReadUint16(buf + 4);
     uint16_t seqNum = ByteStream::ReadUint16(buf + 6);
 
-    printf("PduHeader:%d,%d,%d\n", pduLen, commandID, seqNum);
+    printf("ReadPduHeader:%d,%d,%d\n", pduLen, commandID, seqNum);
     m_header.length = pduLen;
     m_header.commandID = commandID;
     m_header.seqNum = seqNum;
+}
+
+void InfiPdu::WritePduHeader () {
+    PduHeader header;
+    header.length = htonl(m_buf.GetWriteOffset());
+    header.commandID = htons(GetCommandID());
+    header.seqNum = htons(GetSeqNum());
+
+    // Copy the header to the buffer
+    memcpy(GetBuffer(), &header, sizeof(header));
+    printf("WritePduHeader:%d,%d,%d\n",header.length, header.commandID, header.seqNum);
 }
 
 bool InfiPdu::IsPduAvailable(uchar_t* buf, uint32_t len, uint32_t& pduLen) {

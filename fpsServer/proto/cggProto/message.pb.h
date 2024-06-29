@@ -62,32 +62,32 @@ PROTOBUF_NAMESPACE_OPEN
 template<> ::Position* Arena::CreateMaybeMessage<::Position>(Arena*);
 PROTOBUF_NAMESPACE_CLOSE
 
-enum MsgCmdID : int {
+enum CommandID : int {
   CID_UNKNOWN = 0,
   CID_LOGIN_REQ = 257,
   CID_LOGIN_RES = 258,
   CID_PLAYER_MOVE = 259,
-  MsgCmdID_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::min(),
-  MsgCmdID_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::max()
+  CommandID_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::min(),
+  CommandID_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<::PROTOBUF_NAMESPACE_ID::int32>::max()
 };
-bool MsgCmdID_IsValid(int value);
-constexpr MsgCmdID MsgCmdID_MIN = CID_UNKNOWN;
-constexpr MsgCmdID MsgCmdID_MAX = CID_PLAYER_MOVE;
-constexpr int MsgCmdID_ARRAYSIZE = MsgCmdID_MAX + 1;
+bool CommandID_IsValid(int value);
+constexpr CommandID CommandID_MIN = CID_UNKNOWN;
+constexpr CommandID CommandID_MAX = CID_PLAYER_MOVE;
+constexpr int CommandID_ARRAYSIZE = CommandID_MAX + 1;
 
-const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* MsgCmdID_descriptor();
+const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* CommandID_descriptor();
 template<typename T>
-inline const std::string& MsgCmdID_Name(T enum_t_value) {
-  static_assert(::std::is_same<T, MsgCmdID>::value ||
+inline const std::string& CommandID_Name(T enum_t_value) {
+  static_assert(::std::is_same<T, CommandID>::value ||
     ::std::is_integral<T>::value,
-    "Incorrect type passed to function MsgCmdID_Name.");
+    "Incorrect type passed to function CommandID_Name.");
   return ::PROTOBUF_NAMESPACE_ID::internal::NameOfEnum(
-    MsgCmdID_descriptor(), enum_t_value);
+    CommandID_descriptor(), enum_t_value);
 }
-inline bool MsgCmdID_Parse(
-    const std::string& name, MsgCmdID* value) {
-  return ::PROTOBUF_NAMESPACE_ID::internal::ParseNamedEnum<MsgCmdID>(
-    MsgCmdID_descriptor(), name, value);
+inline bool CommandID_Parse(
+    const std::string& name, CommandID* value) {
+  return ::PROTOBUF_NAMESPACE_ID::internal::ParseNamedEnum<CommandID>(
+    CommandID_descriptor(), name, value);
 }
 // ===================================================================
 
@@ -421,10 +421,10 @@ inline void Position::set_roll(float value) {
 
 PROTOBUF_NAMESPACE_OPEN
 
-template <> struct is_proto_enum< ::MsgCmdID> : ::std::true_type {};
+template <> struct is_proto_enum< ::CommandID> : ::std::true_type {};
 template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::MsgCmdID>() {
-  return ::MsgCmdID_descriptor();
+inline const EnumDescriptor* GetEnumDescriptor< ::CommandID>() {
+  return ::CommandID_descriptor();
 }
 
 PROTOBUF_NAMESPACE_CLOSE

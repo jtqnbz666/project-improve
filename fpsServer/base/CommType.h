@@ -28,6 +28,11 @@
 #include <assert.h>
 #include <iostream>
 
+#include <google/protobuf/message.h>   // 主要的protobuf消息类
+#include <google/protobuf/io/coded_stream.h>  // 用于序列化和反序列化的编码流
+#include <google/protobuf/io/zero_copy_stream_impl.h>   // 用于零拷贝IO的实现
+
+
 
 
 using namespace std;

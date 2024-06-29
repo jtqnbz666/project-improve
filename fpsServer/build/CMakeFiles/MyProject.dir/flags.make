@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/jt/project-improve/fpsServer/base -I/home/jt/project-improve/fpsServer/api -I/home/jt/project-improve/fpsServer/.
+CXX_INCLUDES = -I/home/jt/project-improve/fpsServer/base -I/home/jt/project-improve/fpsServer/api -I/home/jt/project-improve/fpsServer/proto/cggProto
 
 CXX_FLAGS = -std=gnu++11
 

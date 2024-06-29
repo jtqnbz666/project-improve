@@ -1,5 +1,0 @@
-syntax = "proto3";
-message messageHeader {     
-    int32 commandId = 1;          // 消息类型
-    int32 sequenceNumber = 2;     // 序列号
-}

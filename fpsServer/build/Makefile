@@ -190,29 +190,29 @@ api/MoveHandle.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/api/MoveHandle.cpp.s
 .PHONY : api/MoveHandle.cpp.s
 
-api/RouterRegister.o: api/RouterRegister.cpp.o
-.PHONY : api/RouterRegister.o
+proto/cggProto/message.pb.o: proto/cggProto/message.pb.cc.o
+.PHONY : proto/cggProto/message.pb.o
 
 # target to build an object file
-api/RouterRegister.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/api/RouterRegister.cpp.o
-.PHONY : api/RouterRegister.cpp.o
+proto/cggProto/message.pb.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/proto/cggProto/message.pb.cc.o
+.PHONY : proto/cggProto/message.pb.cc.o
 
-api/RouterRegister.i: api/RouterRegister.cpp.i
-.PHONY : api/RouterRegister.i
+proto/cggProto/message.pb.i: proto/cggProto/message.pb.cc.i
+.PHONY : proto/cggProto/message.pb.i
 
 # target to preprocess a source file
-api/RouterRegister.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/api/RouterRegister.cpp.i
-.PHONY : api/RouterRegister.cpp.i
+proto/cggProto/message.pb.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/proto/cggProto/message.pb.cc.i
+.PHONY : proto/cggProto/message.pb.cc.i
 
-api/RouterRegister.s: api/RouterRegister.cpp.s
-.PHONY : api/RouterRegister.s
+proto/cggProto/message.pb.s: proto/cggProto/message.pb.cc.s
+.PHONY : proto/cggProto/message.pb.s
 
 # target to generate assembly for a file
-api/RouterRegister.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/api/RouterRegister.cpp.s
-.PHONY : api/RouterRegister.cpp.s
+proto/cggProto/message.pb.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/proto/cggProto/message.pb.cc.s
+.PHONY : proto/cggProto/message.pb.cc.s
 
 server.o: server.cpp.o
 .PHONY : server.o
@@ -254,9 +254,9 @@ help:
 	@echo "... api/MoveHandle.o"
 	@echo "... api/MoveHandle.i"
 	@echo "... api/MoveHandle.s"
-	@echo "... api/RouterRegister.o"
-	@echo "... api/RouterRegister.i"
-	@echo "... api/RouterRegister.s"
+	@echo "... proto/cggProto/message.pb.o"
+	@echo "... proto/cggProto/message.pb.i"
+	@echo "... proto/cggProto/message.pb.s"
 	@echo "... server.o"
 	@echo "... server.i"
 	@echo "... server.s"

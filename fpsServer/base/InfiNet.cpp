@@ -39,6 +39,11 @@ int infiNet_udpRecv(int fd, void* buf, int len, sockaddr_in* peer_addr) {
     return ret;
 }
 
+int infiNet_udpSend(int fd, void* buf, int len) {
+    printf("infiNet_udpWrite success!:%s\n", buf);
+    sendto(fd, buf, len, 0, nullptr, 0);
+}
+
 int infiNet_close(int fd) {
 
 }
