@@ -9,8 +9,9 @@ project(MyProject)
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
-# 添加子目录 base
-add_subdirectory(base api)
+# 添加子目录 base , 意思是base目录有CMakeList.txt
+# 只需要在最外层创建build再执行cmake ..， 不用单独创建base/build
+add_subdirectory(base)
 
 # 添加包含目录
 include_directories(base api .)

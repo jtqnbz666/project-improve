@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/MyProject.dir/server.cpp.o CMakeFiles/MyProject.dir/MsgConn.cpp.o CMakeFiles/MyProject.dir/api/MoveHandle.cpp.o CMakeFiles/MyProject.dir/api/RouterRegister.cpp.o -o MyProject  api/libbase.a 
+/usr/bin/c++ CMakeFiles/MyProject.dir/server.cpp.o CMakeFiles/MyProject.dir/MsgConn.cpp.o CMakeFiles/MyProject.dir/api/MoveHandle.cpp.o CMakeFiles/MyProject.dir/api/RouterRegister.cpp.o -o MyProject  base/libbase.a 

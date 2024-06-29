@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/jt/project-improve/fpsServer/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/jt/project-improve/fpsServer/build/CMakeFiles /home/jt/project-improve/fpsServer/build/api//CMakeFiles/progress.marks
-	cd /home/jt/project-improve/fpsServer/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 api/all
+	cd /home/jt/project-improve/fpsServer/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/jt/project-improve/fpsServer/build/CMakeFiles /home/jt/project-improve/fpsServer/build/base//CMakeFiles/progress.marks
+	cd /home/jt/project-improve/fpsServer/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 base/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/jt/project-improve/fpsServer/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/jt/project-improve/fpsServer/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 api/clean
+	cd /home/jt/project-improve/fpsServer/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 base/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,12 +103,12 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/jt/project-improve/fpsServer/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 api/preinstall
+	cd /home/jt/project-improve/fpsServer/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 base/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/jt/project-improve/fpsServer/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 api/preinstall
+	cd /home/jt/project-improve/fpsServer/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 base/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
@@ -117,17 +117,17 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-api/CMakeFiles/base.dir/rule:
-	cd /home/jt/project-improve/fpsServer/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 api/CMakeFiles/base.dir/rule
-.PHONY : api/CMakeFiles/base.dir/rule
+base/CMakeFiles/base.dir/rule:
+	cd /home/jt/project-improve/fpsServer/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 base/CMakeFiles/base.dir/rule
+.PHONY : base/CMakeFiles/base.dir/rule
 
 # Convenience name for target.
-base: api/CMakeFiles/base.dir/rule
+base: base/CMakeFiles/base.dir/rule
 .PHONY : base
 
 # fast build rule for target.
 base/fast:
-	cd /home/jt/project-improve/fpsServer/build && $(MAKE) $(MAKESILENT) -f api/CMakeFiles/base.dir/build.make api/CMakeFiles/base.dir/build
+	cd /home/jt/project-improve/fpsServer/build && $(MAKE) $(MAKESILENT) -f base/CMakeFiles/base.dir/build.make base/CMakeFiles/base.dir/build
 .PHONY : base/fast
 
 BaseConn.o: BaseConn.cpp.o
@@ -135,7 +135,7 @@ BaseConn.o: BaseConn.cpp.o
 
 # target to build an object file
 BaseConn.cpp.o:
-	cd /home/jt/project-improve/fpsServer/build && $(MAKE) $(MAKESILENT) -f api/CMakeFiles/base.dir/build.make api/CMakeFiles/base.dir/BaseConn.cpp.o
+	cd /home/jt/project-improve/fpsServer/build && $(MAKE) $(MAKESILENT) -f base/CMakeFiles/base.dir/build.make base/CMakeFiles/base.dir/BaseConn.cpp.o
 .PHONY : BaseConn.cpp.o
 
 BaseConn.i: BaseConn.cpp.i
@@ -143,7 +143,7 @@ BaseConn.i: BaseConn.cpp.i
 
 # target to preprocess a source file
 BaseConn.cpp.i:
-	cd /home/jt/project-improve/fpsServer/build && $(MAKE) $(MAKESILENT) -f api/CMakeFiles/base.dir/build.make api/CMakeFiles/base.dir/BaseConn.cpp.i
+	cd /home/jt/project-improve/fpsServer/build && $(MAKE) $(MAKESILENT) -f base/CMakeFiles/base.dir/build.make base/CMakeFiles/base.dir/BaseConn.cpp.i
 .PHONY : BaseConn.cpp.i
 
 BaseConn.s: BaseConn.cpp.s
@@ -151,7 +151,7 @@ BaseConn.s: BaseConn.cpp.s
 
 # target to generate assembly for a file
 BaseConn.cpp.s:
-	cd /home/jt/project-improve/fpsServer/build && $(MAKE) $(MAKESILENT) -f api/CMakeFiles/base.dir/build.make api/CMakeFiles/base.dir/BaseConn.cpp.s
+	cd /home/jt/project-improve/fpsServer/build && $(MAKE) $(MAKESILENT) -f base/CMakeFiles/base.dir/build.make base/CMakeFiles/base.dir/BaseConn.cpp.s
 .PHONY : BaseConn.cpp.s
 
 BasePdu.o: BasePdu.cpp.o
@@ -159,7 +159,7 @@ BasePdu.o: BasePdu.cpp.o
 
 # target to build an object file
 BasePdu.cpp.o:
-	cd /home/jt/project-improve/fpsServer/build && $(MAKE) $(MAKESILENT) -f api/CMakeFiles/base.dir/build.make api/CMakeFiles/base.dir/BasePdu.cpp.o
+	cd /home/jt/project-improve/fpsServer/build && $(MAKE) $(MAKESILENT) -f base/CMakeFiles/base.dir/build.make base/CMakeFiles/base.dir/BasePdu.cpp.o
 .PHONY : BasePdu.cpp.o
 
 BasePdu.i: BasePdu.cpp.i
@@ -167,7 +167,7 @@ BasePdu.i: BasePdu.cpp.i
 
 # target to preprocess a source file
 BasePdu.cpp.i:
-	cd /home/jt/project-improve/fpsServer/build && $(MAKE) $(MAKESILENT) -f api/CMakeFiles/base.dir/build.make api/CMakeFiles/base.dir/BasePdu.cpp.i
+	cd /home/jt/project-improve/fpsServer/build && $(MAKE) $(MAKESILENT) -f base/CMakeFiles/base.dir/build.make base/CMakeFiles/base.dir/BasePdu.cpp.i
 .PHONY : BasePdu.cpp.i
 
 BasePdu.s: BasePdu.cpp.s
@@ -175,7 +175,7 @@ BasePdu.s: BasePdu.cpp.s
 
 # target to generate assembly for a file
 BasePdu.cpp.s:
-	cd /home/jt/project-improve/fpsServer/build && $(MAKE) $(MAKESILENT) -f api/CMakeFiles/base.dir/build.make api/CMakeFiles/base.dir/BasePdu.cpp.s
+	cd /home/jt/project-improve/fpsServer/build && $(MAKE) $(MAKESILENT) -f base/CMakeFiles/base.dir/build.make base/CMakeFiles/base.dir/BasePdu.cpp.s
 .PHONY : BasePdu.cpp.s
 
 EventDispatch.o: EventDispatch.cpp.o
@@ -183,7 +183,7 @@ EventDispatch.o: EventDispatch.cpp.o
 
 # target to build an object file
 EventDispatch.cpp.o:
-	cd /home/jt/project-improve/fpsServer/build && $(MAKE) $(MAKESILENT) -f api/CMakeFiles/base.dir/build.make api/CMakeFiles/base.dir/EventDispatch.cpp.o
+	cd /home/jt/project-improve/fpsServer/build && $(MAKE) $(MAKESILENT) -f base/CMakeFiles/base.dir/build.make base/CMakeFiles/base.dir/EventDispatch.cpp.o
 .PHONY : EventDispatch.cpp.o
 
 EventDispatch.i: EventDispatch.cpp.i
@@ -191,7 +191,7 @@ EventDispatch.i: EventDispatch.cpp.i
 
 # target to preprocess a source file
 EventDispatch.cpp.i:
-	cd /home/jt/project-improve/fpsServer/build && $(MAKE) $(MAKESILENT) -f api/CMakeFiles/base.dir/build.make api/CMakeFiles/base.dir/EventDispatch.cpp.i
+	cd /home/jt/project-improve/fpsServer/build && $(MAKE) $(MAKESILENT) -f base/CMakeFiles/base.dir/build.make base/CMakeFiles/base.dir/EventDispatch.cpp.i
 .PHONY : EventDispatch.cpp.i
 
 EventDispatch.s: EventDispatch.cpp.s
@@ -199,7 +199,7 @@ EventDispatch.s: EventDispatch.cpp.s
 
 # target to generate assembly for a file
 EventDispatch.cpp.s:
-	cd /home/jt/project-improve/fpsServer/build && $(MAKE) $(MAKESILENT) -f api/CMakeFiles/base.dir/build.make api/CMakeFiles/base.dir/EventDispatch.cpp.s
+	cd /home/jt/project-improve/fpsServer/build && $(MAKE) $(MAKESILENT) -f base/CMakeFiles/base.dir/build.make base/CMakeFiles/base.dir/EventDispatch.cpp.s
 .PHONY : EventDispatch.cpp.s
 
 InfiNet.o: InfiNet.cpp.o
@@ -207,7 +207,7 @@ InfiNet.o: InfiNet.cpp.o
 
 # target to build an object file
 InfiNet.cpp.o:
-	cd /home/jt/project-improve/fpsServer/build && $(MAKE) $(MAKESILENT) -f api/CMakeFiles/base.dir/build.make api/CMakeFiles/base.dir/InfiNet.cpp.o
+	cd /home/jt/project-improve/fpsServer/build && $(MAKE) $(MAKESILENT) -f base/CMakeFiles/base.dir/build.make base/CMakeFiles/base.dir/InfiNet.cpp.o
 .PHONY : InfiNet.cpp.o
 
 InfiNet.i: InfiNet.cpp.i
@@ -215,7 +215,7 @@ InfiNet.i: InfiNet.cpp.i
 
 # target to preprocess a source file
 InfiNet.cpp.i:
-	cd /home/jt/project-improve/fpsServer/build && $(MAKE) $(MAKESILENT) -f api/CMakeFiles/base.dir/build.make api/CMakeFiles/base.dir/InfiNet.cpp.i
+	cd /home/jt/project-improve/fpsServer/build && $(MAKE) $(MAKESILENT) -f base/CMakeFiles/base.dir/build.make base/CMakeFiles/base.dir/InfiNet.cpp.i
 .PHONY : InfiNet.cpp.i
 
 InfiNet.s: InfiNet.cpp.s
@@ -223,7 +223,7 @@ InfiNet.s: InfiNet.cpp.s
 
 # target to generate assembly for a file
 InfiNet.cpp.s:
-	cd /home/jt/project-improve/fpsServer/build && $(MAKE) $(MAKESILENT) -f api/CMakeFiles/base.dir/build.make api/CMakeFiles/base.dir/InfiNet.cpp.s
+	cd /home/jt/project-improve/fpsServer/build && $(MAKE) $(MAKESILENT) -f base/CMakeFiles/base.dir/build.make base/CMakeFiles/base.dir/InfiNet.cpp.s
 .PHONY : InfiNet.cpp.s
 
 PduUtil.o: PduUtil.cpp.o
@@ -231,7 +231,7 @@ PduUtil.o: PduUtil.cpp.o
 
 # target to build an object file
 PduUtil.cpp.o:
-	cd /home/jt/project-improve/fpsServer/build && $(MAKE) $(MAKESILENT) -f api/CMakeFiles/base.dir/build.make api/CMakeFiles/base.dir/PduUtil.cpp.o
+	cd /home/jt/project-improve/fpsServer/build && $(MAKE) $(MAKESILENT) -f base/CMakeFiles/base.dir/build.make base/CMakeFiles/base.dir/PduUtil.cpp.o
 .PHONY : PduUtil.cpp.o
 
 PduUtil.i: PduUtil.cpp.i
@@ -239,7 +239,7 @@ PduUtil.i: PduUtil.cpp.i
 
 # target to preprocess a source file
 PduUtil.cpp.i:
-	cd /home/jt/project-improve/fpsServer/build && $(MAKE) $(MAKESILENT) -f api/CMakeFiles/base.dir/build.make api/CMakeFiles/base.dir/PduUtil.cpp.i
+	cd /home/jt/project-improve/fpsServer/build && $(MAKE) $(MAKESILENT) -f base/CMakeFiles/base.dir/build.make base/CMakeFiles/base.dir/PduUtil.cpp.i
 .PHONY : PduUtil.cpp.i
 
 PduUtil.s: PduUtil.cpp.s
@@ -247,7 +247,7 @@ PduUtil.s: PduUtil.cpp.s
 
 # target to generate assembly for a file
 PduUtil.cpp.s:
-	cd /home/jt/project-improve/fpsServer/build && $(MAKE) $(MAKESILENT) -f api/CMakeFiles/base.dir/build.make api/CMakeFiles/base.dir/PduUtil.cpp.s
+	cd /home/jt/project-improve/fpsServer/build && $(MAKE) $(MAKESILENT) -f base/CMakeFiles/base.dir/build.make base/CMakeFiles/base.dir/PduUtil.cpp.s
 .PHONY : PduUtil.cpp.s
 
 Task.o: Task.cpp.o
@@ -255,7 +255,7 @@ Task.o: Task.cpp.o
 
 # target to build an object file
 Task.cpp.o:
-	cd /home/jt/project-improve/fpsServer/build && $(MAKE) $(MAKESILENT) -f api/CMakeFiles/base.dir/build.make api/CMakeFiles/base.dir/Task.cpp.o
+	cd /home/jt/project-improve/fpsServer/build && $(MAKE) $(MAKESILENT) -f base/CMakeFiles/base.dir/build.make base/CMakeFiles/base.dir/Task.cpp.o
 .PHONY : Task.cpp.o
 
 Task.i: Task.cpp.i
@@ -263,7 +263,7 @@ Task.i: Task.cpp.i
 
 # target to preprocess a source file
 Task.cpp.i:
-	cd /home/jt/project-improve/fpsServer/build && $(MAKE) $(MAKESILENT) -f api/CMakeFiles/base.dir/build.make api/CMakeFiles/base.dir/Task.cpp.i
+	cd /home/jt/project-improve/fpsServer/build && $(MAKE) $(MAKESILENT) -f base/CMakeFiles/base.dir/build.make base/CMakeFiles/base.dir/Task.cpp.i
 .PHONY : Task.cpp.i
 
 Task.s: Task.cpp.s
@@ -271,7 +271,7 @@ Task.s: Task.cpp.s
 
 # target to generate assembly for a file
 Task.cpp.s:
-	cd /home/jt/project-improve/fpsServer/build && $(MAKE) $(MAKESILENT) -f api/CMakeFiles/base.dir/build.make api/CMakeFiles/base.dir/Task.cpp.s
+	cd /home/jt/project-improve/fpsServer/build && $(MAKE) $(MAKESILENT) -f base/CMakeFiles/base.dir/build.make base/CMakeFiles/base.dir/Task.cpp.s
 .PHONY : Task.cpp.s
 
 ThreadPool.o: ThreadPool.cpp.o
@@ -279,7 +279,7 @@ ThreadPool.o: ThreadPool.cpp.o
 
 # target to build an object file
 ThreadPool.cpp.o:
-	cd /home/jt/project-improve/fpsServer/build && $(MAKE) $(MAKESILENT) -f api/CMakeFiles/base.dir/build.make api/CMakeFiles/base.dir/ThreadPool.cpp.o
+	cd /home/jt/project-improve/fpsServer/build && $(MAKE) $(MAKESILENT) -f base/CMakeFiles/base.dir/build.make base/CMakeFiles/base.dir/ThreadPool.cpp.o
 .PHONY : ThreadPool.cpp.o
 
 ThreadPool.i: ThreadPool.cpp.i
@@ -287,7 +287,7 @@ ThreadPool.i: ThreadPool.cpp.i
 
 # target to preprocess a source file
 ThreadPool.cpp.i:
-	cd /home/jt/project-improve/fpsServer/build && $(MAKE) $(MAKESILENT) -f api/CMakeFiles/base.dir/build.make api/CMakeFiles/base.dir/ThreadPool.cpp.i
+	cd /home/jt/project-improve/fpsServer/build && $(MAKE) $(MAKESILENT) -f base/CMakeFiles/base.dir/build.make base/CMakeFiles/base.dir/ThreadPool.cpp.i
 .PHONY : ThreadPool.cpp.i
 
 ThreadPool.s: ThreadPool.cpp.s
@@ -295,7 +295,7 @@ ThreadPool.s: ThreadPool.cpp.s
 
 # target to generate assembly for a file
 ThreadPool.cpp.s:
-	cd /home/jt/project-improve/fpsServer/build && $(MAKE) $(MAKESILENT) -f api/CMakeFiles/base.dir/build.make api/CMakeFiles/base.dir/ThreadPool.cpp.s
+	cd /home/jt/project-improve/fpsServer/build && $(MAKE) $(MAKESILENT) -f base/CMakeFiles/base.dir/build.make base/CMakeFiles/base.dir/ThreadPool.cpp.s
 .PHONY : ThreadPool.cpp.s
 
 # Help Target

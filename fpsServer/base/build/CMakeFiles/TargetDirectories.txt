@@ -1,3 +1,0 @@
-/home/jt/project-improve/fpsServer/base/build/CMakeFiles/base.dir
-/home/jt/project-improve/fpsServer/base/build/CMakeFiles/edit_cache.dir
-/home/jt/project-improve/fpsServer/base/build/CMakeFiles/rebuild_cache.dir

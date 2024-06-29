@@ -139,7 +139,7 @@ base: cmake_check_build_system
 
 # fast build rule for target.
 base/fast:
-	$(MAKE) $(MAKESILENT) -f api/CMakeFiles/base.dir/build.make api/CMakeFiles/base.dir/build
+	$(MAKE) $(MAKESILENT) -f base/CMakeFiles/base.dir/build.make base/CMakeFiles/base.dir/build
 .PHONY : base/fast
 
 MsgConn.o: MsgConn.cpp.o

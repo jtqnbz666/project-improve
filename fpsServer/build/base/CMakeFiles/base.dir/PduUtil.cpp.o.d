@@ -1,7 +1,7 @@
-api/CMakeFiles/base.dir/InfiNet.cpp.o: \
- /home/jt/project-improve/fpsServer/base/InfiNet.cpp \
+base/CMakeFiles/base.dir/PduUtil.cpp.o: \
+ /home/jt/project-improve/fpsServer/base/PduUtil.cpp \
  /usr/include/stdc-predef.h \
- /home/jt/project-improve/fpsServer/base/InfiNet.h \
+ /home/jt/project-improve/fpsServer/base/PduUtil.h \
  /home/jt/project-improve/fpsServer/base/CommType.h \
  /usr/include/x86_64-linux-gnu/sys/epoll.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
@@ -213,24 +213,4 @@ api/CMakeFiles/base.dir/InfiNet.cpp.o: \
  /usr/include/c++/11/bits/locale_facets.tcc \
  /usr/include/c++/11/bits/basic_ios.tcc \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
- /usr/include/c++/11/bits/istream.tcc \
- /home/jt/project-improve/fpsServer/base/BaseConn.h \
- /usr/include/c++/11/unordered_map \
- /usr/include/c++/11/ext/aligned_buffer.h \
- /usr/include/c++/11/bits/hashtable.h \
- /usr/include/c++/11/bits/hashtable_policy.h /usr/include/c++/11/tuple \
- /usr/include/c++/11/utility /usr/include/c++/11/bits/stl_relops.h \
- /usr/include/c++/11/array /usr/include/c++/11/bits/uses_allocator.h \
- /usr/include/c++/11/bits/invoke.h \
- /usr/include/c++/11/bits/enable_special_members.h \
- /usr/include/c++/11/bits/unordered_map.h \
- /usr/include/c++/11/bits/erase_if.h \
- /home/jt/project-improve/fpsServer/base/PduUtil.h \
- /home/jt/project-improve/fpsServer/base/ThreadPool.h \
- /home/jt/project-improve/fpsServer/base/Task.h \
- /home/jt/project-improve/fpsServer/base/BasePdu.h \
- /usr/include/c++/11/list /usr/include/c++/11/bits/stl_list.h \
- /usr/include/c++/11/bits/allocated_ptr.h \
- /usr/include/c++/11/bits/list.tcc \
- /home/jt/project-improve/fpsServer/base/Router.h \
- /home/jt/project-improve/fpsServer/base/EventDispatch.h
+ /usr/include/c++/11/bits/istream.tcc

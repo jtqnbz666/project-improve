@@ -1,6 +1,8 @@
 CMakeFiles/MyProject.dir/api/RouterRegister.cpp.o: \
  /home/jt/project-improve/fpsServer/api/RouterRegister.cpp \
  /usr/include/stdc-predef.h \
+ /home/jt/project-improve/fpsServer/api/RouterRegister.h \
+ /home/jt/project-improve/fpsServer/api/MoveHandle.h \
  /home/jt/project-improve/fpsServer/base/RouterFactory.h \
  /usr/include/c++/11/unordered_map /usr/include/c++/11/type_traits \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
@@ -240,6 +242,4 @@ CMakeFiles/MyProject.dir/api/RouterRegister.cpp.o: \
  /usr/include/c++/11/bits/stl_list.h \
  /usr/include/c++/11/bits/allocated_ptr.h \
  /usr/include/c++/11/bits/list.tcc \
- /home/jt/project-improve/fpsServer/api/MoveHandle.h \
- /home/jt/project-improve/fpsServer/base/BasePdu.h \
- /home/jt/project-improve/fpsServer/api/RouterRegister.h
+ /home/jt/project-improve/fpsServer/base/BasePdu.h

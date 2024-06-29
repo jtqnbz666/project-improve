@@ -240,4 +240,5 @@ CMakeFiles/MyProject.dir/server.cpp.o: \
  /home/jt/project-improve/fpsServer/base/RouterFactory.h \
  /usr/include/c++/11/functional /usr/include/c++/11/bits/refwrap.h \
  /usr/include/c++/11/bits/std_function.h \
- /home/jt/project-improve/fpsServer/api/RouterRegister.h
+ /home/jt/project-improve/fpsServer/api/RouterRegister.h \
+ /home/jt/project-improve/fpsServer/api/MoveHandle.h

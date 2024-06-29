@@ -1,5 +1,3 @@
-#include "RouterFactory.h"
-#include "MoveHandle.h"
 #include "RouterRegister.h"
 
 void registerAllRouters() {

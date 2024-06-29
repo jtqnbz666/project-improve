@@ -115,11 +115,11 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/3.22.1/CMakeCCompiler.cmake"
   "CMakeFiles/3.22.1/CMakeCXXCompiler.cmake"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
-  "api/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "base/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/MyProject.dir/DependInfo.cmake"
-  "api/CMakeFiles/base.dir/DependInfo.cmake"
+  "base/CMakeFiles/base.dir/DependInfo.cmake"
   )

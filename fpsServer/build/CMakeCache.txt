@@ -15,7 +15,7 @@
 ########################
 
 //Value Computed by CMake
-BaseLibrary_BINARY_DIR:STATIC=/home/jt/project-improve/fpsServer/build/api
+BaseLibrary_BINARY_DIR:STATIC=/home/jt/project-improve/fpsServer/build/base
 
 //Value Computed by CMake
 BaseLibrary_IS_TOP_LEVEL:STATIC=OFF
