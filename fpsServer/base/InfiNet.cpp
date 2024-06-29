@@ -4,6 +4,10 @@ int infiNet_startLoop() {
     EventDispatch::Instance()->StartDispatch(0);
 }
 
+int infiNet_registerTimer(time_t msec, Callback func) {
+    EventDispatch::Instance()->GetTimerManager()->AddTimer(msec, func);
+}
+
 int infiNet_destroy() {
     return 0; 
 }
@@ -40,8 +44,10 @@ int infiNet_udpRecv(int fd, void* buf, int len, sockaddr_in* peer_addr) {
 }
 
 int infiNet_udpSend(int fd, void* buf, int len) {
-    printf("infiNet_udpWrite success!:%s\n", buf);
-    sendto(fd, buf, len, 0, nullptr, 0);
+    int ret = sendto(fd, buf, len, 0, nullptr, 0);
+    printf("fd:%d, infiNet_udpWrite success!\n", fd);
+    return ret;
+
 }
 
 int infiNet_close(int fd) {

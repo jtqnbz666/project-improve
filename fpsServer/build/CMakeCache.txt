@@ -228,7 +228,7 @@ MyProject_IS_TOP_LEVEL:STATIC=ON
 MyProject_SOURCE_DIR:STATIC=/home/jt/project-improve/fpsServer
 
 //Path to a file.
-Protobuf_INCLUDE_DIR:PATH=/usr/include
+Protobuf_INCLUDE_DIR:PATH=/usr/local/include
 
 //Path to a library.
 Protobuf_LIBRARY_DEBUG:FILEPATH=/usr/local/lib/libprotobuf.so
@@ -243,13 +243,13 @@ Protobuf_LITE_LIBRARY_DEBUG:FILEPATH=/usr/local/lib/libprotobuf-lite.so
 Protobuf_LITE_LIBRARY_RELEASE:FILEPATH=/usr/local/lib/libprotobuf-lite.so
 
 //The Google Protocol Buffers Compiler
-Protobuf_PROTOC_EXECUTABLE:FILEPATH=/usr/bin/protoc
+Protobuf_PROTOC_EXECUTABLE:FILEPATH=/usr/local/bin/protoc
 
 //Path to a library.
-Protobuf_PROTOC_LIBRARY_DEBUG:FILEPATH=Protobuf_PROTOC_LIBRARY_DEBUG-NOTFOUND
+Protobuf_PROTOC_LIBRARY_DEBUG:FILEPATH=/usr/local/lib/libprotoc.so
 
 //Path to a library.
-Protobuf_PROTOC_LIBRARY_RELEASE:FILEPATH=Protobuf_PROTOC_LIBRARY_RELEASE-NOTFOUND
+Protobuf_PROTOC_LIBRARY_RELEASE:FILEPATH=/usr/local/lib/libprotoc.so
 
 
 ########################
@@ -404,7 +404,7 @@ CMAKE_UNAME:INTERNAL=/usr/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 //Details about finding Protobuf
-FIND_PACKAGE_MESSAGE_DETAILS_Protobuf:INTERNAL=[/usr/local/lib/libprotobuf.so][/usr/include][v3.12.4()]
+FIND_PACKAGE_MESSAGE_DETAILS_Protobuf:INTERNAL=[/usr/local/lib/libprotobuf.so][/usr/local/include][v3.18.1()]
 //ADVANCED property for variable: Protobuf_INCLUDE_DIR
 Protobuf_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: Protobuf_LIBRARY_DEBUG

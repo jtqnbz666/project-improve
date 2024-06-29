@@ -97,10 +97,24 @@ base/CMakeFiles/base.dir/BasePdu.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/base.dir/BasePdu.cpp.s"
 	cd /home/jt/project-improve/fpsServer/build/base && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jt/project-improve/fpsServer/base/BasePdu.cpp -o CMakeFiles/base.dir/BasePdu.cpp.s
 
+base/CMakeFiles/base.dir/ConnManager.cpp.o: base/CMakeFiles/base.dir/flags.make
+base/CMakeFiles/base.dir/ConnManager.cpp.o: ../base/ConnManager.cpp
+base/CMakeFiles/base.dir/ConnManager.cpp.o: base/CMakeFiles/base.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jt/project-improve/fpsServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object base/CMakeFiles/base.dir/ConnManager.cpp.o"
+	cd /home/jt/project-improve/fpsServer/build/base && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT base/CMakeFiles/base.dir/ConnManager.cpp.o -MF CMakeFiles/base.dir/ConnManager.cpp.o.d -o CMakeFiles/base.dir/ConnManager.cpp.o -c /home/jt/project-improve/fpsServer/base/ConnManager.cpp
+
+base/CMakeFiles/base.dir/ConnManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/base.dir/ConnManager.cpp.i"
+	cd /home/jt/project-improve/fpsServer/build/base && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jt/project-improve/fpsServer/base/ConnManager.cpp > CMakeFiles/base.dir/ConnManager.cpp.i
+
+base/CMakeFiles/base.dir/ConnManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/base.dir/ConnManager.cpp.s"
+	cd /home/jt/project-improve/fpsServer/build/base && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jt/project-improve/fpsServer/base/ConnManager.cpp -o CMakeFiles/base.dir/ConnManager.cpp.s
+
 base/CMakeFiles/base.dir/EventDispatch.cpp.o: base/CMakeFiles/base.dir/flags.make
 base/CMakeFiles/base.dir/EventDispatch.cpp.o: ../base/EventDispatch.cpp
 base/CMakeFiles/base.dir/EventDispatch.cpp.o: base/CMakeFiles/base.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jt/project-improve/fpsServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object base/CMakeFiles/base.dir/EventDispatch.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jt/project-improve/fpsServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object base/CMakeFiles/base.dir/EventDispatch.cpp.o"
 	cd /home/jt/project-improve/fpsServer/build/base && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT base/CMakeFiles/base.dir/EventDispatch.cpp.o -MF CMakeFiles/base.dir/EventDispatch.cpp.o.d -o CMakeFiles/base.dir/EventDispatch.cpp.o -c /home/jt/project-improve/fpsServer/base/EventDispatch.cpp
 
 base/CMakeFiles/base.dir/EventDispatch.cpp.i: cmake_force
@@ -114,7 +128,7 @@ base/CMakeFiles/base.dir/EventDispatch.cpp.s: cmake_force
 base/CMakeFiles/base.dir/InfiNet.cpp.o: base/CMakeFiles/base.dir/flags.make
 base/CMakeFiles/base.dir/InfiNet.cpp.o: ../base/InfiNet.cpp
 base/CMakeFiles/base.dir/InfiNet.cpp.o: base/CMakeFiles/base.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jt/project-improve/fpsServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object base/CMakeFiles/base.dir/InfiNet.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jt/project-improve/fpsServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object base/CMakeFiles/base.dir/InfiNet.cpp.o"
 	cd /home/jt/project-improve/fpsServer/build/base && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT base/CMakeFiles/base.dir/InfiNet.cpp.o -MF CMakeFiles/base.dir/InfiNet.cpp.o.d -o CMakeFiles/base.dir/InfiNet.cpp.o -c /home/jt/project-improve/fpsServer/base/InfiNet.cpp
 
 base/CMakeFiles/base.dir/InfiNet.cpp.i: cmake_force
@@ -128,7 +142,7 @@ base/CMakeFiles/base.dir/InfiNet.cpp.s: cmake_force
 base/CMakeFiles/base.dir/PduUtil.cpp.o: base/CMakeFiles/base.dir/flags.make
 base/CMakeFiles/base.dir/PduUtil.cpp.o: ../base/PduUtil.cpp
 base/CMakeFiles/base.dir/PduUtil.cpp.o: base/CMakeFiles/base.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jt/project-improve/fpsServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object base/CMakeFiles/base.dir/PduUtil.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jt/project-improve/fpsServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object base/CMakeFiles/base.dir/PduUtil.cpp.o"
 	cd /home/jt/project-improve/fpsServer/build/base && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT base/CMakeFiles/base.dir/PduUtil.cpp.o -MF CMakeFiles/base.dir/PduUtil.cpp.o.d -o CMakeFiles/base.dir/PduUtil.cpp.o -c /home/jt/project-improve/fpsServer/base/PduUtil.cpp
 
 base/CMakeFiles/base.dir/PduUtil.cpp.i: cmake_force
@@ -142,7 +156,7 @@ base/CMakeFiles/base.dir/PduUtil.cpp.s: cmake_force
 base/CMakeFiles/base.dir/Task.cpp.o: base/CMakeFiles/base.dir/flags.make
 base/CMakeFiles/base.dir/Task.cpp.o: ../base/Task.cpp
 base/CMakeFiles/base.dir/Task.cpp.o: base/CMakeFiles/base.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jt/project-improve/fpsServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object base/CMakeFiles/base.dir/Task.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jt/project-improve/fpsServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object base/CMakeFiles/base.dir/Task.cpp.o"
 	cd /home/jt/project-improve/fpsServer/build/base && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT base/CMakeFiles/base.dir/Task.cpp.o -MF CMakeFiles/base.dir/Task.cpp.o.d -o CMakeFiles/base.dir/Task.cpp.o -c /home/jt/project-improve/fpsServer/base/Task.cpp
 
 base/CMakeFiles/base.dir/Task.cpp.i: cmake_force
@@ -156,7 +170,7 @@ base/CMakeFiles/base.dir/Task.cpp.s: cmake_force
 base/CMakeFiles/base.dir/ThreadPool.cpp.o: base/CMakeFiles/base.dir/flags.make
 base/CMakeFiles/base.dir/ThreadPool.cpp.o: ../base/ThreadPool.cpp
 base/CMakeFiles/base.dir/ThreadPool.cpp.o: base/CMakeFiles/base.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jt/project-improve/fpsServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object base/CMakeFiles/base.dir/ThreadPool.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jt/project-improve/fpsServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object base/CMakeFiles/base.dir/ThreadPool.cpp.o"
 	cd /home/jt/project-improve/fpsServer/build/base && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT base/CMakeFiles/base.dir/ThreadPool.cpp.o -MF CMakeFiles/base.dir/ThreadPool.cpp.o.d -o CMakeFiles/base.dir/ThreadPool.cpp.o -c /home/jt/project-improve/fpsServer/base/ThreadPool.cpp
 
 base/CMakeFiles/base.dir/ThreadPool.cpp.i: cmake_force
@@ -167,29 +181,63 @@ base/CMakeFiles/base.dir/ThreadPool.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/base.dir/ThreadPool.cpp.s"
 	cd /home/jt/project-improve/fpsServer/build/base && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jt/project-improve/fpsServer/base/ThreadPool.cpp -o CMakeFiles/base.dir/ThreadPool.cpp.s
 
+base/CMakeFiles/base.dir/TimerManager.cpp.o: base/CMakeFiles/base.dir/flags.make
+base/CMakeFiles/base.dir/TimerManager.cpp.o: ../base/TimerManager.cpp
+base/CMakeFiles/base.dir/TimerManager.cpp.o: base/CMakeFiles/base.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jt/project-improve/fpsServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object base/CMakeFiles/base.dir/TimerManager.cpp.o"
+	cd /home/jt/project-improve/fpsServer/build/base && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT base/CMakeFiles/base.dir/TimerManager.cpp.o -MF CMakeFiles/base.dir/TimerManager.cpp.o.d -o CMakeFiles/base.dir/TimerManager.cpp.o -c /home/jt/project-improve/fpsServer/base/TimerManager.cpp
+
+base/CMakeFiles/base.dir/TimerManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/base.dir/TimerManager.cpp.i"
+	cd /home/jt/project-improve/fpsServer/build/base && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jt/project-improve/fpsServer/base/TimerManager.cpp > CMakeFiles/base.dir/TimerManager.cpp.i
+
+base/CMakeFiles/base.dir/TimerManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/base.dir/TimerManager.cpp.s"
+	cd /home/jt/project-improve/fpsServer/build/base && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jt/project-improve/fpsServer/base/TimerManager.cpp -o CMakeFiles/base.dir/TimerManager.cpp.s
+
+base/CMakeFiles/base.dir/TimerNode.cpp.o: base/CMakeFiles/base.dir/flags.make
+base/CMakeFiles/base.dir/TimerNode.cpp.o: ../base/TimerNode.cpp
+base/CMakeFiles/base.dir/TimerNode.cpp.o: base/CMakeFiles/base.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jt/project-improve/fpsServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object base/CMakeFiles/base.dir/TimerNode.cpp.o"
+	cd /home/jt/project-improve/fpsServer/build/base && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT base/CMakeFiles/base.dir/TimerNode.cpp.o -MF CMakeFiles/base.dir/TimerNode.cpp.o.d -o CMakeFiles/base.dir/TimerNode.cpp.o -c /home/jt/project-improve/fpsServer/base/TimerNode.cpp
+
+base/CMakeFiles/base.dir/TimerNode.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/base.dir/TimerNode.cpp.i"
+	cd /home/jt/project-improve/fpsServer/build/base && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jt/project-improve/fpsServer/base/TimerNode.cpp > CMakeFiles/base.dir/TimerNode.cpp.i
+
+base/CMakeFiles/base.dir/TimerNode.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/base.dir/TimerNode.cpp.s"
+	cd /home/jt/project-improve/fpsServer/build/base && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jt/project-improve/fpsServer/base/TimerNode.cpp -o CMakeFiles/base.dir/TimerNode.cpp.s
+
 # Object files for target base
 base_OBJECTS = \
 "CMakeFiles/base.dir/BaseConn.cpp.o" \
 "CMakeFiles/base.dir/BasePdu.cpp.o" \
+"CMakeFiles/base.dir/ConnManager.cpp.o" \
 "CMakeFiles/base.dir/EventDispatch.cpp.o" \
 "CMakeFiles/base.dir/InfiNet.cpp.o" \
 "CMakeFiles/base.dir/PduUtil.cpp.o" \
 "CMakeFiles/base.dir/Task.cpp.o" \
-"CMakeFiles/base.dir/ThreadPool.cpp.o"
+"CMakeFiles/base.dir/ThreadPool.cpp.o" \
+"CMakeFiles/base.dir/TimerManager.cpp.o" \
+"CMakeFiles/base.dir/TimerNode.cpp.o"
 
 # External object files for target base
 base_EXTERNAL_OBJECTS =
 
 base/libbase.a: base/CMakeFiles/base.dir/BaseConn.cpp.o
 base/libbase.a: base/CMakeFiles/base.dir/BasePdu.cpp.o
+base/libbase.a: base/CMakeFiles/base.dir/ConnManager.cpp.o
 base/libbase.a: base/CMakeFiles/base.dir/EventDispatch.cpp.o
 base/libbase.a: base/CMakeFiles/base.dir/InfiNet.cpp.o
 base/libbase.a: base/CMakeFiles/base.dir/PduUtil.cpp.o
 base/libbase.a: base/CMakeFiles/base.dir/Task.cpp.o
 base/libbase.a: base/CMakeFiles/base.dir/ThreadPool.cpp.o
+base/libbase.a: base/CMakeFiles/base.dir/TimerManager.cpp.o
+base/libbase.a: base/CMakeFiles/base.dir/TimerNode.cpp.o
 base/libbase.a: base/CMakeFiles/base.dir/build.make
 base/libbase.a: base/CMakeFiles/base.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jt/project-improve/fpsServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX static library libbase.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jt/project-improve/fpsServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX static library libbase.a"
 	cd /home/jt/project-improve/fpsServer/build/base && $(CMAKE_COMMAND) -P CMakeFiles/base.dir/cmake_clean_target.cmake
 	cd /home/jt/project-improve/fpsServer/build/base && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/base.dir/link.txt --verbose=$(VERBOSE)
 

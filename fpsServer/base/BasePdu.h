@@ -36,17 +36,22 @@ public:
     void WritePduHeader();
 
     uchar_t* GetBuffer() { return m_buf.GetBuffer(); }
-    uint32_t GetPduLength() { return m_header.length; }
+    // 总长
     uint32_t GetBufferLength() { return m_buf.GetWriteOffset(); }
+    // 消息体长度
+    uint32_t GetBodyLength() { return m_buf.GetWriteOffset() - sizeof(PduHeader); }
+    // 头部字段的长度
+    uint32_t GetPduLength() { return m_header.length; }
+    
     uint16_t GetCommandID() { return m_header.commandID; }
     uint16_t GetSeqNum() { return m_header.seqNum; }
     BaseConn* GetBaseConn() { return m_conn; }
     uchar_t* GetBodyData() { return m_buf.GetBuffer() + sizeof(PduHeader); }
-    uint32_t GetBodyLength() { return m_buf.GetWriteOffset() - sizeof(PduHeader); }
 
     void SetBodyData(const google::protobuf::Message& msg);
     void SetCommandID(uint16_t id) { m_header.commandID = id; }
     void SetSeqNum(uint16_t seqNum) { m_header.seqNum = seqNum; }
+    void SetPduLength(uint32_t len) { m_header.length = len; }
     
 
 private:

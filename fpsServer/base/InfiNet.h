@@ -26,6 +26,7 @@ int infiNet_udpRecv(int fd, void* buf, int len, sockaddr_in* peer_addr);
 
 int infiNet_udpSend(int fd, void* buf, int len);
 
+int infiNet_registerTimer(time_t msec, Callback func);
 
 int infiNet_close(int fd);
 

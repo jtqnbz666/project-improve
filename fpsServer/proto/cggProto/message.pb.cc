@@ -14,24 +14,25 @@
 #include <google/protobuf/wire_format.h>
 // @@protoc_insertion_point(includes)
 #include <google/protobuf/port_def.inc>
-class PositionDefaultTypeInternal {
- public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<Position> _instance;
-} _Position_default_instance_;
-static void InitDefaultsscc_info_Position_message_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-  {
-    void* ptr = &::_Position_default_instance_;
-    new (ptr) ::Position();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-  ::Position::InitAsDefaultInstance();
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_Position_message_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_Position_message_2eproto}, {}};
-
+PROTOBUF_PRAGMA_INIT_SEG
+constexpr Position::Position(
+  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
+  : x_(0)
+  , y_(0)
+  , z_(0)
+  , yaw_(0)
+  , pitch_(0)
+  , roll_(0){}
+struct PositionDefaultTypeInternal {
+  constexpr PositionDefaultTypeInternal()
+    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
+  ~PositionDefaultTypeInternal() {}
+  union {
+    Position _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PositionDefaultTypeInternal _Position_default_instance_;
 static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_message_2eproto[1];
 static const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* file_level_enum_descriptors_message_2eproto[1];
 static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_message_2eproto = nullptr;
@@ -42,6 +43,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_message_2eproto::offsets[] PRO
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
+  ~0u,  // no _inlined_string_donated_
   PROTOBUF_FIELD_OFFSET(::Position, x_),
   PROTOBUF_FIELD_OFFSET(::Position, y_),
   PROTOBUF_FIELD_OFFSET(::Position, z_),
@@ -50,7 +52,7 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_message_2eproto::offsets[] PRO
   PROTOBUF_FIELD_OFFSET(::Position, roll_),
 };
 static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, -1, sizeof(::Position)},
+  { 0, -1, -1, sizeof(::Position)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -65,21 +67,19 @@ const char descriptor_table_protodef_message_2eproto[] PROTOBUF_SECTION_VARIABLE
   "LOGIN_RES\020\202\002\022\024\n\017CID_PLAYER_MOVE\020\203\002b\006prot"
   "o3"
   ;
-static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_message_2eproto_deps[1] = {
-};
-static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_message_2eproto_sccs[1] = {
-  &scc_info_Position_message_2eproto.base,
-};
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_message_2eproto_once;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_message_2eproto = {
-  false, false, descriptor_table_protodef_message_2eproto, "message.proto", 202,
-  &descriptor_table_message_2eproto_once, descriptor_table_message_2eproto_sccs, descriptor_table_message_2eproto_deps, 1, 0,
+  false, false, 202, descriptor_table_protodef_message_2eproto, "message.proto", 
+  &descriptor_table_message_2eproto_once, nullptr, 0, 1,
   schemas, file_default_instances, TableStruct_message_2eproto::offsets,
-  file_level_metadata_message_2eproto, 1, file_level_enum_descriptors_message_2eproto, file_level_service_descriptors_message_2eproto,
+  file_level_metadata_message_2eproto, file_level_enum_descriptors_message_2eproto, file_level_service_descriptors_message_2eproto,
 };
+PROTOBUF_ATTRIBUTE_WEAK const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable* descriptor_table_message_2eproto_getter() {
+  return &descriptor_table_message_2eproto;
+}
 
 // Force running AddDescriptors() at dynamic initialization time.
-static bool dynamic_init_dummy_message_2eproto = (static_cast<void>(::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_message_2eproto)), true);
+PROTOBUF_ATTRIBUTE_INIT_PRIORITY static ::PROTOBUF_NAMESPACE_ID::internal::AddDescriptorsRunner dynamic_init_dummy_message_2eproto(&descriptor_table_message_2eproto);
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* CommandID_descriptor() {
   ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_message_2eproto);
   return file_level_enum_descriptors_message_2eproto[0];
@@ -99,16 +99,17 @@ bool CommandID_IsValid(int value) {
 
 // ===================================================================
 
-void Position::InitAsDefaultInstance() {
-}
 class Position::_Internal {
  public:
 };
 
-Position::Position(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+Position::Position(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor();
-  RegisterArenaDtor(arena);
+  if (!is_message_owned) {
+    RegisterArenaDtor(arena);
+  }
   // @@protoc_insertion_point(arena_constructor:Position)
 }
 Position::Position(const Position& from)
@@ -121,19 +122,21 @@ Position::Position(const Position& from)
 }
 
 void Position::SharedCtor() {
-  ::memset(&x_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&roll_) -
-      reinterpret_cast<char*>(&x_)) + sizeof(roll_));
+::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
+    reinterpret_cast<char*>(&x_) - reinterpret_cast<char*>(this)),
+    0, static_cast<size_t>(reinterpret_cast<char*>(&roll_) -
+    reinterpret_cast<char*>(&x_)) + sizeof(roll_));
 }
 
 Position::~Position() {
   // @@protoc_insertion_point(destructor:Position)
+  if (GetArenaForAllocation() != nullptr) return;
   SharedDtor();
   _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void Position::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void Position::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
 }
 
 void Position::ArenaDtor(void* object) {
@@ -145,11 +148,6 @@ void Position::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
 void Position::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const Position& Position::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_Position_message_2eproto.base);
-  return *internal_default_instance();
-}
-
 
 void Position::Clear() {
 // @@protoc_insertion_point(message_clear_start:Position)
@@ -165,73 +163,78 @@ void Position::Clear() {
 
 const char* Position::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
-  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
     ::PROTOBUF_NAMESPACE_ID::uint32 tag;
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    CHK_(ptr);
     switch (tag >> 3) {
       // float x = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 13)) {
           x_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<float>(ptr);
           ptr += sizeof(float);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // float y = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 21)) {
           y_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<float>(ptr);
           ptr += sizeof(float);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // float z = 3;
       case 3:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 29)) {
           z_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<float>(ptr);
           ptr += sizeof(float);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // float yaw = 4;
       case 4:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 37)) {
           yaw_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<float>(ptr);
           ptr += sizeof(float);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // float pitch = 5;
       case 5:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 45)) {
           pitch_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<float>(ptr);
           ptr += sizeof(float);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // float roll = 6;
       case 6:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 53)) {
           roll_ = ::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<float>(ptr);
           ptr += sizeof(float);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag & 7) == 4 || tag == 0) {
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
+message_done:
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
@@ -242,37 +245,37 @@ failure:
   (void) cached_has_bits;
 
   // float x = 1;
-  if (!(this->x() <= 0 && this->x() >= 0)) {
+  if (!(this->_internal_x() <= 0 && this->_internal_x() >= 0)) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(1, this->_internal_x(), target);
   }
 
   // float y = 2;
-  if (!(this->y() <= 0 && this->y() >= 0)) {
+  if (!(this->_internal_y() <= 0 && this->_internal_y() >= 0)) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(2, this->_internal_y(), target);
   }
 
   // float z = 3;
-  if (!(this->z() <= 0 && this->z() >= 0)) {
+  if (!(this->_internal_z() <= 0 && this->_internal_z() >= 0)) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(3, this->_internal_z(), target);
   }
 
   // float yaw = 4;
-  if (!(this->yaw() <= 0 && this->yaw() >= 0)) {
+  if (!(this->_internal_yaw() <= 0 && this->_internal_yaw() >= 0)) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(4, this->_internal_yaw(), target);
   }
 
   // float pitch = 5;
-  if (!(this->pitch() <= 0 && this->pitch() >= 0)) {
+  if (!(this->_internal_pitch() <= 0 && this->_internal_pitch() >= 0)) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(5, this->_internal_pitch(), target);
   }
 
   // float roll = 6;
-  if (!(this->roll() <= 0 && this->roll() >= 0)) {
+  if (!(this->_internal_roll() <= 0 && this->_internal_roll() >= 0)) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(6, this->_internal_roll(), target);
   }
@@ -294,91 +297,76 @@ size_t Position::ByteSizeLong() const {
   (void) cached_has_bits;
 
   // float x = 1;
-  if (!(this->x() <= 0 && this->x() >= 0)) {
+  if (!(this->_internal_x() <= 0 && this->_internal_x() >= 0)) {
     total_size += 1 + 4;
   }
 
   // float y = 2;
-  if (!(this->y() <= 0 && this->y() >= 0)) {
+  if (!(this->_internal_y() <= 0 && this->_internal_y() >= 0)) {
     total_size += 1 + 4;
   }
 
   // float z = 3;
-  if (!(this->z() <= 0 && this->z() >= 0)) {
+  if (!(this->_internal_z() <= 0 && this->_internal_z() >= 0)) {
     total_size += 1 + 4;
   }
 
   // float yaw = 4;
-  if (!(this->yaw() <= 0 && this->yaw() >= 0)) {
+  if (!(this->_internal_yaw() <= 0 && this->_internal_yaw() >= 0)) {
     total_size += 1 + 4;
   }
 
   // float pitch = 5;
-  if (!(this->pitch() <= 0 && this->pitch() >= 0)) {
+  if (!(this->_internal_pitch() <= 0 && this->_internal_pitch() >= 0)) {
     total_size += 1 + 4;
   }
 
   // float roll = 6;
-  if (!(this->roll() <= 0 && this->roll() >= 0)) {
+  if (!(this->_internal_roll() <= 0 && this->_internal_roll() >= 0)) {
     total_size += 1 + 4;
   }
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_cached_size_);
 }
 
-void Position::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:Position)
-  GOOGLE_DCHECK_NE(&from, this);
-  const Position* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<Position>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:Position)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:Position)
-    MergeFrom(*source);
-  }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData Position::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSizeCheck,
+    Position::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*Position::GetClassData() const { return &_class_data_; }
+
+void Position::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message* to,
+                      const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+  static_cast<Position *>(to)->MergeFrom(
+      static_cast<const Position &>(from));
 }
+
 
 void Position::MergeFrom(const Position& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:Position)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (!(from.x() <= 0 && from.x() >= 0)) {
+  if (!(from._internal_x() <= 0 && from._internal_x() >= 0)) {
     _internal_set_x(from._internal_x());
   }
-  if (!(from.y() <= 0 && from.y() >= 0)) {
+  if (!(from._internal_y() <= 0 && from._internal_y() >= 0)) {
     _internal_set_y(from._internal_y());
   }
-  if (!(from.z() <= 0 && from.z() >= 0)) {
+  if (!(from._internal_z() <= 0 && from._internal_z() >= 0)) {
     _internal_set_z(from._internal_z());
   }
-  if (!(from.yaw() <= 0 && from.yaw() >= 0)) {
+  if (!(from._internal_yaw() <= 0 && from._internal_yaw() >= 0)) {
     _internal_set_yaw(from._internal_yaw());
   }
-  if (!(from.pitch() <= 0 && from.pitch() >= 0)) {
+  if (!(from._internal_pitch() <= 0 && from._internal_pitch() >= 0)) {
     _internal_set_pitch(from._internal_pitch());
   }
-  if (!(from.roll() <= 0 && from.roll() >= 0)) {
+  if (!(from._internal_roll() <= 0 && from._internal_roll() >= 0)) {
     _internal_set_roll(from._internal_roll());
   }
-}
-
-void Position::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:Position)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void Position::CopyFrom(const Position& from) {
@@ -394,7 +382,7 @@ bool Position::IsInitialized() const {
 
 void Position::InternalSwap(Position* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
       PROTOBUF_FIELD_OFFSET(Position, roll_)
       + sizeof(Position::roll_)
@@ -404,9 +392,10 @@ void Position::InternalSwap(Position* other) {
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata Position::GetMetadata() const {
-  return GetMetadataStatic();
+  return ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(
+      &descriptor_table_message_2eproto_getter, &descriptor_table_message_2eproto_once,
+      file_level_metadata_message_2eproto[0]);
 }
-
 
 // @@protoc_insertion_point(namespace_scope)
 PROTOBUF_NAMESPACE_OPEN

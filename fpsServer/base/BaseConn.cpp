@@ -22,22 +22,9 @@ void BaseConnCallback(void* callback_data, uint8_t msg, uint32_t handle, void* p
    
 }
 
-void AddBaseConn(BaseConn* bConn) {
-    BaseConn::globalSocketMap.insert(make_pair(bConn->GetSocket(), bConn));
-}
 
-void RemoveBaseConn(BaseConn* bConn) {
-    BaseConn::globalSocketMap.erase(bConn->GetSocket());
-}
 
-BaseConn* FindConn(int fd) {
-    BaseConn* bConn = NULL;
-    SocketMap::iterator iter = BaseConn::globalSocketMap.find(fd);
-    if(iter != BaseConn::globalSocketMap.end()) {
-        bConn = iter->second;
-    }
-    return bConn;
-}
+
 
 BaseConn::BaseConn() {
     m_socket = -1;
@@ -77,17 +64,13 @@ int BaseConn::UDPListen(const char* serverIp, uint16_t port, callbackFunc cbFunc
     }
     m_state = SOCKET_STATE_LISTENING;  
     printf("BaseConn::Listen on %s:%d, listenSocket:%d\n", serverIp, port, m_socket);
-    AddBaseConn(this);
+    ConnManager::Instance().AddConn(this);
     EventDispatch::Instance()->AddEvent(m_socket, EPOLLIN | EPOLLET);
     return 0;
 }
 
 void BaseConn::Accept() {
-    if (infiNet_tcpMode(m_socket)) {
-
-    } else {
-        UDPAccept();
-    }
+    UDPAccept();
 }
 
 void BaseConn::UDPAccept() {
@@ -139,7 +122,7 @@ void BaseConn::UDPAccept() {
     bConn->SetRemoteIP(ip);
     bConn->SetRemotePort(port);
 
-    AddBaseConn(bConn);
+    ConnManager::Instance().AddConn(bConn);
     EventDispatch::Instance()->AddEvent(new_sd, EPOLLIN);
     //m_cbFunc(m_cbData, INFINET_MSG_CONNECT, new_sd, NULL);
 }
@@ -188,14 +171,7 @@ void BaseConn::OnRead() {
 
         struct sockaddr_in peer_addr;
         int ret = 0;
-        if (IsTcpMode()) {
-            printf("IsTcpMode\n");
-            // 暂未开发
-        } else {
-            printf("IsUdpMode\n");
-            ret = infiNet_udpRecv(m_socket, m_readBuf.GetBuffer() + m_readBuf.GetWriteOffset(), READ_BUF_SIZE, &peer_addr);
-        }
-        
+        ret = infiNet_udpRecv(m_socket, m_readBuf.GetBuffer() + m_readBuf.GetWriteOffset(), READ_BUF_SIZE, &peer_addr);
         if(ret <= 0) {
             perror("infiNet_udpRecv failed");
         }
@@ -233,6 +209,7 @@ void BaseConn::OnWrite() {
         
         m_writeBuf.Read(NULL, ret); //读多少，就清理多少,memmove
     }
+
     if(m_writeBuf.GetWriteOffset() == 0) {
         m_sending = false;
     }
@@ -265,7 +242,7 @@ int BaseConn::Send(void* data, uint32_t len) {
     if(remain > 0) {
         m_writeBuf.Write((char*)data + offset, remain);  //如果网络等原因没有发送完的数据，就写到这里
         m_sending = true;
-        printf("network busy, left=%d", m_writeBuf.GetWriteOffset());
+        printf("socket:%d, network busy, left=%d", m_socket, m_writeBuf.GetWriteOffset());
     } 
 
     return len;
@@ -280,5 +257,5 @@ void BaseConn::SetTcpMode(bool isTcpMode) {
 }
 
 int BaseConn::SendPdu(InfiPdu* pdu) {
-     return Send(pdu->GetBuffer(), pdu->GetPduLength()); 
+    return Send(pdu->GetBuffer(), pdu->GetPduLength()); 
 }

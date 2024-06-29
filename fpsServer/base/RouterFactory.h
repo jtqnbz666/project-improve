@@ -33,11 +33,11 @@ private:
     std::unordered_map<std::string, CreateRouterFunc> routerMap;
 };
 
+
 #define REGISTER_HANDLE(commandID, RouterType) \
     static bool dummy_##RouterType = []() { \
         RouterFactory::instance().registerRouter(commandID, []() -> Router* { return new RouterType(); }); \
         return true; \
     }()
-
 
 #endif 

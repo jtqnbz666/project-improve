@@ -27,6 +27,8 @@
 #include <sys/resource.h>
 #include <assert.h>
 #include <iostream>
+#include <functional>
+
 
 #include <google/protobuf/message.h>   // 主要的protobuf消息类
 #include <google/protobuf/io/coded_stream.h>  // 用于序列化和反序列化的编码流
@@ -40,6 +42,7 @@ using namespace std;
 typedef unsigned char   uchar_t;
 
 typedef void (*callbackFunc)(void* callbackData, uint8_t msg, uint32_t handle, void* pParam);
+using Callback = function<void ()>;
 
 enum {
     INFINET_MSG_CONNECT = 1,

@@ -1,2 +1,2 @@
-/usr/bin/ar qc libbase.a CMakeFiles/base.dir/BaseConn.cpp.o CMakeFiles/base.dir/BasePdu.cpp.o CMakeFiles/base.dir/EventDispatch.cpp.o CMakeFiles/base.dir/InfiNet.cpp.o CMakeFiles/base.dir/PduUtil.cpp.o CMakeFiles/base.dir/Task.cpp.o CMakeFiles/base.dir/ThreadPool.cpp.o
+/usr/bin/ar qc libbase.a CMakeFiles/base.dir/BaseConn.cpp.o CMakeFiles/base.dir/BasePdu.cpp.o CMakeFiles/base.dir/ConnManager.cpp.o CMakeFiles/base.dir/EventDispatch.cpp.o CMakeFiles/base.dir/InfiNet.cpp.o CMakeFiles/base.dir/PduUtil.cpp.o CMakeFiles/base.dir/Task.cpp.o CMakeFiles/base.dir/ThreadPool.cpp.o CMakeFiles/base.dir/TimerManager.cpp.o CMakeFiles/base.dir/TimerNode.cpp.o
 /usr/bin/ranlib libbase.a

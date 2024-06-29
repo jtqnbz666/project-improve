@@ -7,6 +7,7 @@
 #include <unordered_map>
 #include "PduUtil.h"
 #include "ThreadPool.h"
+#include "ConnManager.h"
 
 using namespace std;
 
@@ -30,6 +31,7 @@ public:
     ~BaseConn();
     int GetSocket() { return m_socket; }
     void SetSocket(int fd) { m_socket = fd; }
+    int GetState() { return m_state; }
     void SetState(uint8_t state) { m_state = state; }
     void SetCallback(callbackFunc cbFunc) { m_cbFunc = cbFunc; }
     void SetCallbackData(void* cbData) { m_cbData = cbData; }
@@ -92,7 +94,5 @@ private:
     InfiBuffer       m_readBuf;       //读写缓冲区分开
     InfiBuffer       m_writeBuf;
 };
-
-BaseConn*  FindConn(int fd);
 
 #endif

@@ -1,7 +1,8 @@
-base/CMakeFiles/base.dir/BasePdu.cpp.o: \
- /home/jt/project-improve/fpsServer/base/BasePdu.cpp \
+base/CMakeFiles/base.dir/ConnManager.cpp.o: \
+ /home/jt/project-improve/fpsServer/base/ConnManager.cpp \
  /usr/include/stdc-predef.h \
- /home/jt/project-improve/fpsServer/base/BasePdu.h \
+ /home/jt/project-improve/fpsServer/base/ConnManager.h \
+ /home/jt/project-improve/fpsServer/base/BaseConn.h \
  /home/jt/project-improve/fpsServer/base/CommType.h \
  /usr/include/x86_64-linux-gnu/sys/epoll.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
@@ -311,11 +312,10 @@ base/CMakeFiles/base.dir/BasePdu.cpp.o: \
  /usr/local/include/google/protobuf/any.h \
  /usr/local/include/google/protobuf/has_bits.h \
  /usr/local/include/google/protobuf/io/zero_copy_stream_impl.h \
- /home/jt/project-improve/fpsServer/base/PduUtil.h \
- /home/jt/project-improve/fpsServer/base/BaseConn.h \
  /home/jt/project-improve/fpsServer/base/InfiNet.h \
+ /home/jt/project-improve/fpsServer/base/BasePdu.h \
+ /home/jt/project-improve/fpsServer/base/PduUtil.h \
  /home/jt/project-improve/fpsServer/base/ThreadPool.h \
  /home/jt/project-improve/fpsServer/base/Task.h /usr/include/c++/11/list \
  /usr/include/c++/11/bits/stl_list.h /usr/include/c++/11/bits/list.tcc \
- /home/jt/project-improve/fpsServer/base/Router.h \
- /home/jt/project-improve/fpsServer/base/ConnManager.h
+ /home/jt/project-improve/fpsServer/base/Router.h

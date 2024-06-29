@@ -8,6 +8,8 @@ EventDispatch::EventDispatch() {
     if(m_epfd == -1) {
         printf("epoll_create failed");
     }
+
+    timerEvents = new TimerManager();
 }
 
 EventDispatch::~EventDispatch() {
@@ -45,13 +47,11 @@ void EventDispatch::StartDispatch(uint32_t wait_timeout) {
     running = true;
     wait_timeout = 100; // 之后加上定时任务再改进
     while(running) {
-        nfds = epoll_wait(m_epfd, events, 1024, wait_timeout);
-       
+        nfds = epoll_wait(m_epfd, events, 1024, timerEvents->TimeToSleep());
         for(int i = 0; i < nfds; i ++) {
             int ev_fd = events[i].data.fd;
             printf("触发了%d, event:%d\n", ev_fd, events[i].events);
-            BaseConn* bConn = FindConn(ev_fd);
-
+            auto bConn =ConnManager::Instance().GetConn(ev_fd);
             if(!bConn) {
                 printf("没有找到socket信息\n");
                 continue;
@@ -66,5 +66,7 @@ void EventDispatch::StartDispatch(uint32_t wait_timeout) {
                 bConn->OnClose();
             }
         }
+
+        while (timerEvents->CheckTimer());
     }
 }

@@ -178,6 +178,30 @@ BasePdu.cpp.s:
 	cd /home/jt/project-improve/fpsServer/build && $(MAKE) $(MAKESILENT) -f base/CMakeFiles/base.dir/build.make base/CMakeFiles/base.dir/BasePdu.cpp.s
 .PHONY : BasePdu.cpp.s
 
+ConnManager.o: ConnManager.cpp.o
+.PHONY : ConnManager.o
+
+# target to build an object file
+ConnManager.cpp.o:
+	cd /home/jt/project-improve/fpsServer/build && $(MAKE) $(MAKESILENT) -f base/CMakeFiles/base.dir/build.make base/CMakeFiles/base.dir/ConnManager.cpp.o
+.PHONY : ConnManager.cpp.o
+
+ConnManager.i: ConnManager.cpp.i
+.PHONY : ConnManager.i
+
+# target to preprocess a source file
+ConnManager.cpp.i:
+	cd /home/jt/project-improve/fpsServer/build && $(MAKE) $(MAKESILENT) -f base/CMakeFiles/base.dir/build.make base/CMakeFiles/base.dir/ConnManager.cpp.i
+.PHONY : ConnManager.cpp.i
+
+ConnManager.s: ConnManager.cpp.s
+.PHONY : ConnManager.s
+
+# target to generate assembly for a file
+ConnManager.cpp.s:
+	cd /home/jt/project-improve/fpsServer/build && $(MAKE) $(MAKESILENT) -f base/CMakeFiles/base.dir/build.make base/CMakeFiles/base.dir/ConnManager.cpp.s
+.PHONY : ConnManager.cpp.s
+
 EventDispatch.o: EventDispatch.cpp.o
 .PHONY : EventDispatch.o
 
@@ -298,6 +322,54 @@ ThreadPool.cpp.s:
 	cd /home/jt/project-improve/fpsServer/build && $(MAKE) $(MAKESILENT) -f base/CMakeFiles/base.dir/build.make base/CMakeFiles/base.dir/ThreadPool.cpp.s
 .PHONY : ThreadPool.cpp.s
 
+TimerManager.o: TimerManager.cpp.o
+.PHONY : TimerManager.o
+
+# target to build an object file
+TimerManager.cpp.o:
+	cd /home/jt/project-improve/fpsServer/build && $(MAKE) $(MAKESILENT) -f base/CMakeFiles/base.dir/build.make base/CMakeFiles/base.dir/TimerManager.cpp.o
+.PHONY : TimerManager.cpp.o
+
+TimerManager.i: TimerManager.cpp.i
+.PHONY : TimerManager.i
+
+# target to preprocess a source file
+TimerManager.cpp.i:
+	cd /home/jt/project-improve/fpsServer/build && $(MAKE) $(MAKESILENT) -f base/CMakeFiles/base.dir/build.make base/CMakeFiles/base.dir/TimerManager.cpp.i
+.PHONY : TimerManager.cpp.i
+
+TimerManager.s: TimerManager.cpp.s
+.PHONY : TimerManager.s
+
+# target to generate assembly for a file
+TimerManager.cpp.s:
+	cd /home/jt/project-improve/fpsServer/build && $(MAKE) $(MAKESILENT) -f base/CMakeFiles/base.dir/build.make base/CMakeFiles/base.dir/TimerManager.cpp.s
+.PHONY : TimerManager.cpp.s
+
+TimerNode.o: TimerNode.cpp.o
+.PHONY : TimerNode.o
+
+# target to build an object file
+TimerNode.cpp.o:
+	cd /home/jt/project-improve/fpsServer/build && $(MAKE) $(MAKESILENT) -f base/CMakeFiles/base.dir/build.make base/CMakeFiles/base.dir/TimerNode.cpp.o
+.PHONY : TimerNode.cpp.o
+
+TimerNode.i: TimerNode.cpp.i
+.PHONY : TimerNode.i
+
+# target to preprocess a source file
+TimerNode.cpp.i:
+	cd /home/jt/project-improve/fpsServer/build && $(MAKE) $(MAKESILENT) -f base/CMakeFiles/base.dir/build.make base/CMakeFiles/base.dir/TimerNode.cpp.i
+.PHONY : TimerNode.cpp.i
+
+TimerNode.s: TimerNode.cpp.s
+.PHONY : TimerNode.s
+
+# target to generate assembly for a file
+TimerNode.cpp.s:
+	cd /home/jt/project-improve/fpsServer/build && $(MAKE) $(MAKESILENT) -f base/CMakeFiles/base.dir/build.make base/CMakeFiles/base.dir/TimerNode.cpp.s
+.PHONY : TimerNode.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -313,6 +385,9 @@ help:
 	@echo "... BasePdu.o"
 	@echo "... BasePdu.i"
 	@echo "... BasePdu.s"
+	@echo "... ConnManager.o"
+	@echo "... ConnManager.i"
+	@echo "... ConnManager.s"
 	@echo "... EventDispatch.o"
 	@echo "... EventDispatch.i"
 	@echo "... EventDispatch.s"
@@ -328,6 +403,12 @@ help:
 	@echo "... ThreadPool.o"
 	@echo "... ThreadPool.i"
 	@echo "... ThreadPool.s"
+	@echo "... TimerManager.o"
+	@echo "... TimerManager.i"
+	@echo "... TimerManager.s"
+	@echo "... TimerNode.o"
+	@echo "... TimerNode.i"
+	@echo "... TimerNode.s"
 .PHONY : help
 
 

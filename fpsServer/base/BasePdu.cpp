@@ -13,6 +13,7 @@ InfiPdu::~InfiPdu() {
 
 InfiPdu* InfiPdu::ReadPdu(uchar_t* buf, uint32_t len) {
     uint32_t pduLen = 0;
+    // 检测pdu是否合法
     // if(!IsPduAvailable(buf, len, pduLen)) {
     //     return nullptr;
     // }
@@ -28,19 +29,22 @@ void InfiPdu::SetBodyData(const google::protobuf::Message& msg) {
     m_buf.Read(NULL, m_buf.GetWriteOffset()); 
     m_buf.Write(NULL, sizeof(PduHeader));
 
-    uint32_t msg_size = msg.ByteSize();
-    uchar_t* szData = new uchar_t[msg_size];
-    if (!msg.SerializeToArray(szData, msg_size)) {
+    uint32_t msgSize = msg.ByteSize();
+    uchar_t* szData = new uchar_t[msgSize];
+    if (!msg.SerializeToArray(szData, msgSize)) {
         perror("Failed to serialize protobuf message.");
         delete[] szData;
         return;
     }
 
-    m_buf.Write(szData, msg_size);
+    m_buf.Write(szData, msgSize);
 
     delete[] szData;
-
+    
+    SetPduLength(m_buf.GetWriteOffset());
     WritePduHeader();
+
+    printf("msgSize:%d, pduLen:%d\n", msgSize, m_header.length);
 }
 
 
@@ -78,14 +82,21 @@ void InfiBuffer::Read(void* buf, uint32_t len) {
 
 
 void InfiPdu::ReadPduHeader (uchar_t* buf) {
-    uint32_t pduLen = ByteStream::ReadUint32(buf); //第一个字节就是长度
-    uint16_t commandID = ByteStream::ReadUint16(buf + 4);
-    uint16_t seqNum = ByteStream::ReadUint16(buf + 6);
+    // uint32_t pduLen = ByteStream::ReadUint32(buf); //第一个字节就是长度
+    // uint16_t commandID = ByteStream::ReadUint16(buf + 4);
+    // uint16_t seqNum = ByteStream::ReadUint16(buf + 6);
 
-    printf("ReadPduHeader:%d,%d,%d\n", pduLen, commandID, seqNum);
-    m_header.length = pduLen;
-    m_header.commandID = commandID;
-    m_header.seqNum = seqNum;
+    // printf("ReadPduHeader:%d,%d,%d\n", pduLen, commandID, seqNum);
+    // m_header.length = pduLen;
+    // m_header.commandID = commandID;
+    // m_header.seqNum = seqNum;
+
+    PduHeader header;
+    memcpy(&header, buf, sizeof(header));
+    header.length = ntohl(header.length);
+    header.commandID = ntohs(header.commandID);
+    header.seqNum = ntohs(header.seqNum);
+    printf("ReadPduHeader:%d,%d,%d\n",header.length, header.commandID, header.seqNum);
 }
 
 void InfiPdu::WritePduHeader () {
@@ -94,9 +105,10 @@ void InfiPdu::WritePduHeader () {
     header.commandID = htons(GetCommandID());
     header.seqNum = htons(GetSeqNum());
 
-    // Copy the header to the buffer
     memcpy(GetBuffer(), &header, sizeof(header));
-    printf("WritePduHeader:%d,%d,%d\n",header.length, header.commandID, header.seqNum);
+    for (int i = 0; i < sizeof(header); ++i) {
+        printf("%02X ", ((unsigned char*)GetBuffer())[i]);
+    }
 }
 
 bool InfiPdu::IsPduAvailable(uchar_t* buf, uint32_t len, uint32_t& pduLen) {

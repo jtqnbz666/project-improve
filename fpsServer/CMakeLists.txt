@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.10)
 project(MyProject)
 
 # 设置 C++ 标准
-set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 # 查找 Protobuf 包
@@ -21,8 +21,11 @@ file(GLOB API_SOURCES "api/*.cpp")
 # 获取 proto 目录下的所有 .pb.cc 文件
 file(GLOB PROTO_SOURCES "proto/cggProto/*.pb.cc")
 
-# 添加可执行文件
+# 添加可执行文件，并添加 -g 选项生成调试信息
 add_executable(MyProject server.cpp MsgConn.cpp ${API_SOURCES} ${PROTO_SOURCES})
+
+# 添加代码可以GDB调试的能力
+target_compile_options(MyProject PRIVATE -g)
 
 # 链接 Protobuf 库和 base 静态库
 target_link_libraries(MyProject base ${PROTOBUF_LIBRARIES})

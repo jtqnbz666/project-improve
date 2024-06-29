@@ -4,8 +4,6 @@
 void MoveHandle::Handle(InfiPdu* pdu) {
     printf("MoveHandle\n");
 
-     // 初始化 Protocol Buffers 库
-    GOOGLE_PROTOBUF_VERIFY_VERSION;
 
     // 创建 Position 对象
     Position testPos;
@@ -19,9 +17,17 @@ void MoveHandle::Handle(InfiPdu* pdu) {
     InfiPdu *backPdu = new InfiPdu();
     backPdu->SetCommandID(1);
     backPdu->SetSeqNum(666);
-    pdu->SetBodyData(testPos);
-    backPdu->GetBaseConn()->SendPdu(backPdu);
-    // 
+    backPdu->SetBodyData(testPos);
+    pdu->GetBaseConn()->SendPdu(backPdu);
+
+    
+    //测试readPdu
+    Position msg;
+    msg.ParseFromArray(backPdu->GetBodyData(), backPdu->GetBodyLength());
+    printf("%.1f:%.1f:%.1f:%.1f:%.1f\n", msg.x(), msg.y(), msg.z(), msg.yaw(), msg.pitch());
+
+    // 转发给所有玩家此位置信息
+    ConnManager::Instance().BroadcastMessageExceptSender(pdu->GetBaseConn()->GetSocket() ,backPdu);
 }
 
 // 在编译器就可以注册路由了，nb
