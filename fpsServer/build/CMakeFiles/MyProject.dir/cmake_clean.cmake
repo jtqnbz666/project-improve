@@ -1,6 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/MyProject.dir/MsgConn.cpp.o"
-  "CMakeFiles/MyProject.dir/MsgConn.cpp.o.d"
   "CMakeFiles/MyProject.dir/api/MoveHandle.cpp.o"
   "CMakeFiles/MyProject.dir/api/MoveHandle.cpp.o.d"
   "CMakeFiles/MyProject.dir/proto/cggProto/message.pb.cc.o"

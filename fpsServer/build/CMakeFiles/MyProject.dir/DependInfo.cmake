@@ -8,15 +8,17 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/jt/project-improve/fpsServer/MsgConn.cpp" "CMakeFiles/MyProject.dir/MsgConn.cpp.o" "gcc" "CMakeFiles/MyProject.dir/MsgConn.cpp.o.d"
-  "/home/jt/project-improve/fpsServer/api/MoveHandle.cpp" "CMakeFiles/MyProject.dir/api/MoveHandle.cpp.o" "gcc" "CMakeFiles/MyProject.dir/api/MoveHandle.cpp.o.d"
-  "/home/jt/project-improve/fpsServer/proto/cggProto/message.pb.cc" "CMakeFiles/MyProject.dir/proto/cggProto/message.pb.cc.o" "gcc" "CMakeFiles/MyProject.dir/proto/cggProto/message.pb.cc.o.d"
-  "/home/jt/project-improve/fpsServer/server.cpp" "CMakeFiles/MyProject.dir/server.cpp.o" "gcc" "CMakeFiles/MyProject.dir/server.cpp.o.d"
+  "/Users/duole-44/project-improve/fpsServer/api/MoveHandle.cpp" "CMakeFiles/MyProject.dir/api/MoveHandle.cpp.o" "gcc" "CMakeFiles/MyProject.dir/api/MoveHandle.cpp.o.d"
+  "/Users/duole-44/project-improve/fpsServer/proto/cggProto/message.pb.cc" "CMakeFiles/MyProject.dir/proto/cggProto/message.pb.cc.o" "gcc" "CMakeFiles/MyProject.dir/proto/cggProto/message.pb.cc.o.d"
+  "/Users/duole-44/project-improve/fpsServer/server.cpp" "CMakeFiles/MyProject.dir/server.cpp.o" "gcc" "CMakeFiles/MyProject.dir/server.cpp.o.d"
   )
 
-# Targets to which this target links.
-set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/jt/project-improve/fpsServer/build/base/CMakeFiles/base.dir/DependInfo.cmake"
+# Targets to which this target links which contain Fortran sources.
+set(CMAKE_Fortran_TARGET_LINKED_INFO_FILES
+  )
+
+# Targets to which this target links which contain Fortran sources.
+set(CMAKE_Fortran_TARGET_FORWARD_LINKED_INFO_FILES
   )
 
 # Fortran module output directory.
