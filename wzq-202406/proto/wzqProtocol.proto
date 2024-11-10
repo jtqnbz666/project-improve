@@ -1,0 +1,117 @@
+//保持连接
+message REQHold {
+}
+
+//心跳包应答
+message ACKHold {
+	optional int32 result_id = 1;   //心跳包返回结果
+}
+//msg 消息封装
+message MsgPackage{
+    optional int64 msg_id = 1;
+    optional int64 seq_id = 2;
+    optional int64 user_id = 3;
+    optional bytes msg = 4;
+    optional bytes src = 5;
+    optional int64 clientid = 6;
+}
+
+message UserRawData {
+    optional int64 userID = 1;
+    optional string name = 2;
+    optional string avatar = 3;             // 头像
+    optional string displayID = 4;          // 外显ID
+    optional int32 score = 5;               // 当前分数
+    optional int32 highestScore = 6;        // 历史最高分
+    optional GameRecord gameRecord = 7;     // 战绩信息
+}
+
+message GameRecord {
+    optional int32 totalCount = 1;          // 总场次
+    optional int32 winCount = 2;            // 胜利场次
+}
+
+//注册
+message REQRegister
+{
+    optional bytes account = 1;
+    optional bytes passwd  = 2;
+}
+
+message ACKRegister
+{
+    optional int32 code   = 1;
+}
+
+message REQUserRegister {
+    required bytes userName = 1;		//用户名
+    required bytes userPassword = 2;		//密码
+}
+
+// 注册反馈消息
+message ACKUserRegister {
+    required int32 result_id = 1 [default = 0];		//应答结果（0=成功）
+}
+
+//  登陆方式
+enum LoginType {
+  LT_UnKnown = 0;
+  LT_PWD = 1;
+  LT_MOBILE = 2;
+}
+
+// 密码登录
+message REQUserPWDLogin {
+    required bytes userName = 1;          // 用户名
+    required bytes userPassword = 2;      // 密码
+}
+
+// 密码登录反馈消息
+message ACKUserPWDLogin {
+    required int32 result_id = 1 [default = 0];        
+    optional bytes token = 2;
+    optional UserRawData baseInfo = 3;
+}
+
+// TOKEN登录
+message REQUserTokenLogin {
+    required bytes token = 1;
+}
+
+// TOKEN登录反馈消息
+message ACKUserTokenLogin {
+    optional int32 resultCode = 1 ;          
+    optional UserRawData baseInfo = 2;
+}
+
+// 验证码发送请求
+message REQSendVerifyCode {
+    required bytes phoneNumber = 1;      // 手机号
+}
+
+message ACKSendVerifyCode {
+    optional int32 resultCode = 1;        
+}
+
+// 手机号登陆
+message REQPhoneNumberLogin {
+    required bytes phoneNumber = 1;      // 手机号
+    required bytes verifyCode = 2;       // 验证码
+}
+
+// 手机登陆登录反馈消息
+message ACKPhoneNumberLogin {
+    optional int32 resultCode = 1;    
+    optional bytes token = 2;    
+    optional UserRawData baseInfo = 3;
+}
+
+// 修改昵称
+message REQChangeName {
+    optional string name = 1;
+}
+
+message ACKChangeName {
+    optional int32 resultCode = 1;        
+}
+

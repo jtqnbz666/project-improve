@@ -1,0 +1,212 @@
+syntax = "proto2";
+package wzq;
+
+import "wzqProtocol.proto";
+
+// 游戏结束时的状态
+enum GameState {
+  GS_UNKNOWN = 0;
+  GS_DRAW = 1;           // 平局
+  GS_WIN = 2;            // 胜利
+  GS_LOSE = 3;           // 失败
+  GS_READY = 4;          // 准备
+  GS_UNREADY = 5;        // 未准备
+  GS_PLAYING = 6;        // 对局中
+}
+
+enum ChessColorType {
+  Chess_UnKnown = 0;
+  Chess_White = 1;
+  Chess_Black = 2;
+}
+
+enum RoomType {
+    RT_PRIMARY = 1;         // 初级场
+    RT_INTERMEDIATE = 2;    // 中级场
+    RT_PREMIUM = 3;         // 高级场
+}
+
+// 请求创建游戏桌
+message REQCreateTable {
+  optional int64 userID = 1;
+}
+
+message ACKCreateTable {
+  optional int32 resultCode = 1;
+  optional string tableID = 2;
+}
+
+// 请求加入游戏桌
+message REQJoinTable {
+  optional int64 userID = 1;
+  optional string tableID = 2;
+}
+
+message ACKJoinTable {
+  optional int32 resultCode = 1;
+}
+
+// 更新游戏桌状态
+message UpdateTableStatus {
+  optional string tableID = 1;            
+  repeated PlayerStatus players = 2;      // 玩家状态信息
+}
+
+// 状态信息 
+message PlayerStatus {
+  optional UserRawData baseInfo = 1;   // 基本信息
+  optional GameState state = 2;      // 是否准备
+  optional ChessColorType color=3;        //棋子颜色 
+}
+
+// 准备
+message REQReadyGame {
+}
+
+// 准备回应
+message ACKReadyGame {
+  optional int32 resultCode = 1;
+}
+
+// 请求开始匹配
+message REQStartMatch {
+  optional int64 userID = 1; 
+}
+
+// 请求开始游戏
+message REQStartGame {
+  optional int64 userID = 1; 
+}
+
+message ACKStartGame {
+  optional int32 resultCode = 1;
+}
+
+message ACKStartMatch {
+  optional int32 resultCode = 1;
+}
+
+// 匹配成功通知创建游戏桌
+message NotifyCreateTable {
+  repeated int64 players = 1;
+}
+
+// 匹配成功通知创建游戏桌并开始游戏
+message NotifyStartGame {
+    required int64 userId1 = 1; // 玩家1
+    required int64 userId2 = 2; // 玩家2
+}
+
+// 下棋
+message REQDownChess {
+  optional int64 user_id = 1;
+  optional int32 posX = 2;
+  optional int32 posY = 3;
+}
+
+message ACKDownChess {
+  optional int32 posX = 1;
+  optional int32 posY = 2;
+  optional ChessColorType color = 3;
+}
+
+// 匹配请求
+message REQMatch {
+    optional int64 userID = 1;          // 玩家用户id
+    required int32 roomType = 2;     // 匹配等级场
+}
+
+// 匹配请求反馈消息
+message ACKMatch {
+    optional int32 resultCode = 1;
+    optional UserRawData enemyUserInfo = 2;          // 对手信息
+}
+
+
+// 取消匹配
+message NotifyCancelMatch {
+    optional int64 userId = 1;
+    optional int32 roomType = 2;
+}
+
+//存储胜利棋子位置
+message WinPosition{
+   message Row {
+        repeated int32 values = 1;
+    }
+    repeated Row matrix = 1;
+}
+
+//返回胜利信息
+message GameOver{
+  optional GameState state = 1;
+  optional  WinPosition winposition=2;
+}
+
+
+// 局域网对局开始
+message NotifyLocalGameStart {
+ optional ChessColorType chessColor = 1;
+}
+
+message REQRegretChess{
+  optional int32 resultCode = 1;
+}
+message ACKRegretChess{
+  optional int32 resultCode = 1;
+}
+message REQAgreeRegretChess{
+  optional int32 resultCode = 1;
+}
+message ACKAgreeRegretChess{
+  optional int32 resultCode = 1;
+}
+message REQDisAgreeRegretChess{
+  optional int32 resultCode = 1;
+}
+message ACKDisAgreeRegretChess{
+  optional int32 resultCode = 1;
+
+
+
+}
+
+message NotifyGiveUp{
+  
+}
+
+message NotifyPeaceChess{
+
+}
+message NotifyASKPeaceChess{
+  
+}
+message NotifyAgreePeaceChess{
+  
+}
+message NotifyDisagreePeaceChess{
+  
+}
+message ACKAgreePeaceChess{
+
+}
+message ACKDisagreePeaceChess{
+  
+
+}
+message ChessMove {
+   optional int32 x = 1;
+   optional int32 y = 2;
+}
+
+message PlayingResult{
+  optional GameState gameresult=1;
+  optional int64 winuserID = 2; 
+  optional int64 loseuserID = 3;
+
+}
+
+  optional ChessColorType color=4;
+  repeated ChessMove moves = 5;
+}
+

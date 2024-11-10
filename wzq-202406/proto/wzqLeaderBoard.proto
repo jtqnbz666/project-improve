@@ -1,0 +1,26 @@
+syntax = "proto2";
+import "wzqProtocol.proto";
+
+// 排行榜
+//每次点击排行榜都会向后端请求一次最新数据
+message REQLeaderboard {
+  optional uint64 uid = 1;              // 玩家id， 需要看玩家自己是否在榜单上
+}
+
+message ACKLeaderboard {
+  repeated LeaderboardEntity lbEntities = 1;          // 详细数据
+  optional int32 resultCode = 2;                      // 返回码
+}
+
+//单个上榜请求
+message UpBoardReq {
+  optional LeaderboardEntity lbEntity = 1;                // 尝试上榜的数据
+  optional string boardKey = 2;                           // 榜单名字
+}
+
+//单个榜单实体
+message LeaderboardEntity {
+  optional int32 rank = 1;                  // 榜单排名
+  optional uint64 score = 2;                // 榜单分数
+  optional UserRawData personInfo = 3;      // 个人信息
+}
