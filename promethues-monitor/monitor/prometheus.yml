@@ -1,0 +1,29 @@
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+
+scrape_configs:
+  - job_name: 'prometheus'
+    static_configs:
+      - targets: ['localhost:9090']
+
+  - job_name: 'node_exporter'
+    static_configs:
+      - targets: ['host.docker.internal:9100']
+
+  - job_name: 'nginx_exporter'
+    static_configs:
+      - targets: ['host.docker.internal:9113']
+
+  - job_name: 'nginx_log_exporter'
+    static_configs:
+      # 这里用容器名访问，因为都在 monitor-net 网络里
+      - targets: ['nginx-log-exporter:4040']
+    metric_relabel_configs:
+      - source_labels: [path]
+        regex: '^([^?]+).*'
+        target_label: path
+        replacement: '$1'
+  - job_name: 'service_exporter'
+    static_configs:
+      - targets: ['42.193.112.248:8888']

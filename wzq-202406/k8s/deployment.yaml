@@ -1,0 +1,130 @@
+# k8s/deployment.yaml
+
+# IMPORTANT: Before applying this file, you need to build the docker images
+# and push them to a container registry accessible by your Kubernetes cluster.
+# For example:
+# docker build -t your-registry/gm-tool-agent:latest -f k8s/agent/Dockerfile .
+# docker build -t your-registry/gm-tool-ui:latest -f k8s/ui/Dockerfile .
+# docker push your-registry/gm-tool-agent:latest
+# docker push your-registry/gm-tool-ui:latest
+# Then, replace 'gm-tool-agent:latest' and 'gm-tool-ui:latest' in this file
+# with your image names.
+
+# WARNING: This ConfigMap contains sensitive data (database credentials).
+# In a production environment, you should use Kubernetes Secrets to store
+# sensitive data.
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: gm-tool-agent-config
+data:
+  server.ini: |
+    [Env]
+    Name = k8s
+    ShortName = prod
+
+    [Http]
+    Address = 0.0.0.0:21328
+
+    [Mysql]
+    Dsn = root:123456@tcp(8.130.49.219:3307)/wzq?charset=utf8mb4&parseTime=True&loc=Local
+
+    [Redis]
+    Uri = 8.130.49.219:6379
+    Pwd = 123456
+    DB =  0
+
+    [Statsd]
+    Address = 8.130.49.219:8125
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: gm-tool-agent-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: gm-tool-agent
+  template:
+    metadata:
+      labels:
+        app: gm-tool-agent
+    spec:
+      containers:
+      - name: gm-tool-agent
+        image: 8.130.49.219:5000/gm-tool-agent:latest # Replace with your image
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 21328
+        volumeMounts:
+        - name: config
+          mountPath: /root/conf
+      volumes:
+      - name: config
+        configMap:
+          name: gm-tool-agent-config
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: gm-tool-agent-service
+spec:
+  selector:
+    app: gm-tool-agent
+  ports:
+    - protocol: TCP
+      port: 21328
+      targetPort: 21328
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: gm-tool-ui-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: gm-tool-ui
+  template:
+    metadata:
+      labels:
+        app: gm-tool-ui
+    spec:
+      containers:
+      - name: gm-tool-ui
+        image: 8.130.49.219:5000/gm-tool-ui:latest # Replace with your image
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 80
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: gm-tool-ui-service
+spec:
+  selector:
+    app: gm-tool-ui
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: gm-tool-ingress
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
+spec:
+  ingressClassName: nginx
+  rules:
+  - http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: gm-tool-ui-service
+            port:
+              number: 80 

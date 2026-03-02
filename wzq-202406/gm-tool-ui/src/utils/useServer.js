@@ -70,7 +70,7 @@ function useProvideServer() {
     const auth = useAuth();
     const [fetchError, setFetchError] = useState('');
 
-    const hostPrefix = 'http://127.0.0.1:21328/api';
+    const hostPrefix = '/api';
 
     const generateAuth = () => {
         const id = auth.user?.id;
