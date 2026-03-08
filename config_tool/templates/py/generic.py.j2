@@ -1,0 +1,12 @@
+# -*- coding: utf-8 -*-
+# 此文件由 tools/generate.py 自动生成，请勿手动修改。
+
+CONFIG = {
+{%- for row in data %}
+    "{{ row[key_field] }}": {
+{%- for field in fields %}
+        "{{ field.name | to_py_variable_name }}": {{ row[field.name] | to_py_value | replace('\n', '\n        ') }}{{ "," if not loop.last }}
+{%- endfor %}
+    }{{ "," if not loop.last }}
+{%- endfor %}
+} 

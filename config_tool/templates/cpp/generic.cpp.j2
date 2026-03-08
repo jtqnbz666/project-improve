@@ -1,0 +1,27 @@
+#include "{{ class_name }}.h"
+
+// 此文件由 tools/generate.py 自动生成，请勿手动修改。
+
+std::unordered_map<{{ fields[0].type | to_cpp_type }}, S{{ class_name }}> C{{ class_name }}::_InitData() {
+    std::unordered_map<{{ fields[0].type | to_cpp_type }}, S{{ class_name }}> mTempData;
+{% for row in data %}
+    {
+        S{{ class_name }} oConfig;
+    {% for field in fields %}
+        oConfig.{{ field.name | to_cpp_variable_name_with_type(field.type) }} = {{ row[field.name] | to_cpp_value(field.type) }};
+    {% endfor %}
+        mTempData[{{ row[key_field] | to_cpp_value(fields[0].type) }}] = oConfig;
+    }
+{% endfor %}
+    return mTempData;
+}
+
+const std::unordered_map<{{ fields[0].type | to_cpp_type }}, S{{ class_name }}> C{{ class_name }}::mData = C{{ class_name }}::_InitData();
+
+const S{{ class_name }}* C{{ class_name }}::Get({{ fields[0].type | to_cpp_type }} nId) {
+    std::unordered_map<{{ fields[0].type | to_cpp_type }}, S{{ class_name }}>::const_iterator it = mData.find(nId);
+    if (it != mData.end()) {
+        return &it->second;
+    }
+    return nullptr;
+}

@@ -1,0 +1,22 @@
+#pragma once
+#include <string>
+#include <vector>
+#include <unordered_map>
+#include <utility> // For std::pair
+
+// 此文件由 tools/generate.py 自动生成，请勿手动修改。
+
+struct S{{ class_name }} {
+{% for field in fields %}
+    {{ field.type | to_cpp_type }} {{ field.name | to_cpp_variable_name_with_type(field.type) }};
+{% endfor %}
+};
+
+class C{{ class_name }} {
+public:
+    static const std::unordered_map<{{ fields[0].type | to_cpp_type }}, S{{ class_name }}> mData;
+    static const S{{ class_name }}* Get({{ fields[0].type | to_cpp_type }} nId);
+
+private:
+    static std::unordered_map<{{ fields[0].type | to_cpp_type }}, S{{ class_name }}> _InitData();
+};

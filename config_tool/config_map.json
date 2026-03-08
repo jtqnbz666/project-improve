@@ -1,0 +1,18 @@
+{
+    "DemoConfig": {
+        "py_targets": [
+            "webservice/GeneratedConfigs"
+        ],
+        "cpp_targets": [
+            "service/sjgame/sjgame/configs"
+        ]
+    },
+    "HeroConfig": {
+        "py_targets": [
+            "webservice/GeneratedConfigs"
+        ],
+        "cpp_targets": [
+            "service/sjgame/sjgame/configs"
+        ]
+    }
+}
